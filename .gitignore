@@ -1,0 +1,10 @@
+data/
+node_modules/
+# keys and certificates: the simulator makes its own payer pair in data/ at first start
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+.env
+hims.env

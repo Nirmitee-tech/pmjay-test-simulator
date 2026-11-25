@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "49986d61-99c0-417b-8730-17255028de96",
+ "x-hcx-correlation_id": "0c2f82d1-5fef-4bb6-af5c-530b744107f7",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794792329000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1111",
+  "message": "Implant is applicable for procedure code SB017A, but no implant has been requested. If implant is allowed for a given procedure, it is mandatory to add applicable implants in the requested item list, if the parent procedure is requested. Kindly refer to the insurance plan to get the applicable implants for a given procedure.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

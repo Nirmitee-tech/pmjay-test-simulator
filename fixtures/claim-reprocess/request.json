@@ -1,0 +1,193 @@
+{
+ "resourceType": "Bundle",
+ "id": "6501e313-a835-45bd-9c03-a77b481ea6b4",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/TaskBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "0ece86e2-211a-4b59-9271-cf66f1562660"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-19T12:37:18+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:515a589b-4d0b-4bf4-b2b8-9ef615c68254",
+   "resource": {
+    "resourceType": "Task",
+    "id": "515a589b-4d0b-4bf4-b2b8-9ef615c68254",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Task"
+     ]
+    },
+    "status": "requested",
+    "intent": "order",
+    "code": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/financialtaskcode",
+       "code": "reprocess"
+      }
+     ]
+    },
+    "description": "The rejection is disputed. The detailed final bill and the signed discharge summary with the date and time of discharge support the claimed package and stay. Please review the claim again.",
+    "for": {
+     "identifier": {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "Pradhan Mantri Jan Aarogya Yojana (PMJAY) ID"
+        }
+       ]
+      },
+      "value": "SBXSTG269"
+     }
+    },
+    "basedOn": [
+     {
+      "identifier": {
+       "type": {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+          "code": "CLN",
+          "display": "Claim number"
+         }
+        ]
+       },
+       "system": "https://nhcx.abdm.gov.in",
+       "value": "A/9016/26"
+      }
+     }
+    ],
+    "authoredOn": "2026-11-19T12:37:18+05:30",
+    "requester": {
+     "reference": "urn:uuid:4c8c5cc1-da34-4866-9296-d588ad2c68af",
+     "display": "Organization"
+    },
+    "owner": {
+     "reference": "urn:uuid:1086f4dd-aabe-4b82-95f2-567bf6785a70",
+     "display": "Organization"
+    },
+    "input": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-task-input-type-code",
+         "code": "claimNumber",
+         "display": "ClaimNumber"
+        }
+       ]
+      },
+      "valueString": "A/9016/26"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-task-input-type-code",
+         "code": "policyNumber",
+         "display": "PolicyNumber"
+        }
+       ]
+      },
+      "valueString": "PMJAY/HP/S/G"
+     }
+    ],
+    "reasonCode": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-reason-code",
+       "code": "claimrejected",
+       "display": "Reprocess request due to claim rejected by payer"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:4c8c5cc1-da34-4866-9296-d588ad2c68af",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "4c8c5cc1-da34-4866-9296-d588ad2c68af",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:1086f4dd-aabe-4b82-95f2-567bf6785a70",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "1086f4dd-aabe-4b82-95f2-567bf6785a70",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "PMJAY",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  }
+ ]
+}

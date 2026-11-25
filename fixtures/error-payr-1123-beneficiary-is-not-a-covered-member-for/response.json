@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "8a82707a-8c29-4aed-ace1-75a18a3ee4fa",
+ "x-hcx-correlation_id": "2cd0e467-6867-4a65-91f5-0d23f25d8b64",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1795154940000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1123",
+  "message": "Beneficiary is not a covered member for requested payer. Please enroll beneficiary for applicable policy of requested payer and try again.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

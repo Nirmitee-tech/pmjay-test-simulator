@@ -1,0 +1,909 @@
+{
+ "resourceType": "Bundle",
+ "id": "22f76ab9-7fa4-4744-a834-7e99c06b03d3",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/ClaimBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "a644e1ba-388b-46bb-ab01-54bf05fbbb06"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-10T08:16:16+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:419744be-b0b6-447a-a3e1-d7709c2ae650",
+   "resource": {
+    "resourceType": "Claim",
+    "id": "419744be-b0b6-447a-a3e1-d7709c2ae650",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Claim"
+     ]
+    },
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "CLN",
+         "display": "Claim number"
+        }
+       ]
+      },
+      "system": "https://nhcx.abdm.gov.in",
+      "value": "A/9007/26"
+     }
+    ],
+    "status": "active",
+    "type": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "737481003",
+       "display": "Inpatient care management (procedure)"
+      }
+     ]
+    },
+    "use": "preauthorization",
+    "patient": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+     "display": "Patient"
+    },
+    "created": "2026-11-10T08:16:16+05:30",
+    "insurer": {
+     "reference": "urn:uuid:5b702859-010c-4448-a741-022f152df4ec",
+     "display": "Organization"
+    },
+    "provider": {
+     "reference": "urn:uuid:41165254-c279-425d-acd9-3faa8dc7d5a3",
+     "display": "Organization"
+    },
+    "priority": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+       "code": "normal",
+       "display": "Normal"
+      }
+     ]
+    },
+    "billablePeriod": {
+     "start": "2026-11-09T15:38:43+05:30",
+     "end": "2026-11-14"
+    },
+    "enterer": {
+     "display": "1"
+    },
+    "facility": {
+     "display": "TEST HOSPITAL, Deluxe - SF"
+    },
+    "careTeam": [
+     {
+      "sequence": 1,
+      "provider": {
+       "reference": "urn:uuid:ff3e55d6-cb64-4f11-8cc8-943732363d6c",
+       "display": "Practitioner"
+      },
+      "role": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+         "code": "primary",
+         "display": "Primary provider"
+        }
+       ]
+      }
+     }
+    ],
+    "diagnosis": [
+     {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10",
+         "code": "S42.80",
+         "display": "Fracture of other parts of shoulder and upper arm, closed"
+        }
+       ]
+      },
+      "type": [
+       {
+        "coding": [
+         {
+          "system": "http://snomed.info/sct",
+          "code": "148006",
+          "display": "Preliminary diagnosis (contextual qualifier) (qualifier value)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "procedure": [
+     {
+      "sequence": 1,
+      "procedureReference": {
+       "reference": "urn:uuid:c989f91f-edd1-44bc-a7fa-8af8c5abaada",
+       "display": "Unspecified Surgical Package"
+      },
+      "id": "Procedure/1"
+     },
+     {
+      "sequence": 2,
+      "procedureReference": {
+       "reference": "urn:uuid:8bba33e4-63b1-4487-a9e8-08f3cff7b98e",
+       "display": "Open Reduction Internal Fixation, extended stay"
+      },
+      "id": "Procedure/2"
+     }
+    ],
+    "insurance": [
+     {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+       "reference": "urn:uuid:d69eeccb-1a00-493e-8bf5-52482d20fc57",
+       "display": "Coverage"
+      },
+      "preAuthRef": [
+       "PMJAY/HP/S/2024/R2/2026110990000001"
+      ]
+     }
+    ],
+    "supportingInfo": [
+     {
+      "sequence": 1,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "OTH",
+         "display": "Other"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "EDT",
+         "display": "EncounterDateTime"
+        }
+       ]
+      },
+      "valueString": "2026-11-09T15:38:43+05:30",
+      "id": "SupportingInformation/1"
+     },
+     {
+      "sequence": 2,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ONS",
+         "display": "Period, start or end dates of aspects of the Condition. (e.g. admission, discharge etc)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ADDD",
+         "display": "Admission date -Discharge date"
+        }
+       ]
+      },
+      "valueString": "2026-11-09T15:38:43+05:30",
+      "id": "SupportingInformation/2"
+     },
+     {
+      "sequence": 3,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:4ab2cf23-5b3a-4ec3-8a24-08f081f99c4d"
+      },
+      "id": "SupportingInformation/3"
+     },
+     {
+      "sequence": 4,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:abce2a45-ab24-4628-a4e8-fe336cb79b5e"
+      },
+      "id": "SupportingInformation/4"
+     },
+     {
+      "sequence": 5,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "NMI",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "CQD",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "valueString": "Enhancement requested: Wound infection after fixation; two more days for IV antibiotics and dressing.",
+      "id": "SupportingInformation/5"
+     }
+    ],
+    "item": [
+     {
+      "sequence": 1,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       1
+      ],
+      "informationSequence": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-benefit-category",
+         "code": "SB",
+         "display": "Orthopaedics"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "SB017A",
+         "display": "Open Reduction Internal Fixation"
+        }
+       ]
+      },
+      "servicedPeriod": {
+       "start": "2026-11-09",
+       "end": "2026-11-14"
+      },
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 20000.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 20000.0,
+       "currency": "INR"
+      },
+      "id": "Item/1",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sequence": 2,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       1
+      ],
+      "informationSequence": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-benefit-category",
+         "code": "SB",
+         "display": "Orthopaedics"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "IMP0129",
+         "display": "Implant for Displaced Clavicle Fracture (Plate)"
+        }
+       ]
+      },
+      "modifier": [
+       {
+        "coding": [
+         {
+          "system": "http://hl7.org/fhir/ValueSet/procedure-category",
+          "code": "Implant",
+          "display": "Implant"
+         }
+        ]
+       }
+      ],
+      "servicedPeriod": {
+       "start": "2026-11-09",
+       "end": "2026-11-14"
+      },
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 3000.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 3000.0,
+       "currency": "INR"
+      },
+      "id": "Item/2",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sequence": 3,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       2
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-benefit-category",
+         "code": "SB",
+         "display": "Orthopaedics"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "SB017A",
+         "display": "Open Reduction Internal Fixation, extended stay"
+        }
+       ]
+      },
+      "servicedPeriod": {
+       "start": "2026-11-09",
+       "end": "2026-11-14"
+      },
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 6000.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 6000.0,
+       "currency": "INR"
+      },
+      "id": "Item/3",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "total": {
+     "value": 29000.0,
+     "currency": "INR"
+    },
+    "related": [
+     {
+      "claim": {
+       "identifier": {
+        "value": "PMJAY/HP/S/2024/R2/2026110990000001"
+       }
+      },
+      "relationship": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+         "code": "prior",
+         "display": "Prior Claim"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "name": [
+     {
+      "text": "TEST PATIENT"
+     }
+    ],
+    "gender": "male",
+    "birthDate": "1990-01-01",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "PMJAY Member ID"
+        }
+       ]
+      },
+      "system": "https://bis.pmjay.gov.in",
+      "value": "SBXSTG269"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MR",
+         "display": "Medical record number"
+        }
+       ]
+      },
+      "system": "https://ndhm.in/mrn",
+      "value": "U/903/26"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:41165254-c279-425d-acd9-3faa8dc7d5a3",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "41165254-c279-425d-acd9-3faa8dc7d5a3",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:5b702859-010c-4448-a741-022f152df4ec",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "5b702859-010c-4448-a741-022f152df4ec",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "ADITYA BIRLA HEALTH INSURANCE",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ff3e55d6-cb64-4f11-8cc8-943732363d6c",
+   "resource": {
+    "resourceType": "Practitioner",
+    "id": "ff3e55d6-cb64-4f11-8cc8-943732363d6c",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner"
+     ]
+    },
+    "name": [
+     {
+      "text": "DR TEST DOCTOR"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "HPIN",
+         "display": "Health Practitioner ID issued by NDHM"
+        }
+       ]
+      },
+      "system": "https://hpr.abdm.gov.in",
+      "value": "00-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MD",
+         "display": "Medical License number"
+        }
+       ]
+      },
+      "system": "https://doctor.ndhm.gov.in",
+      "value": "00-0000-0000-0000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:d69eeccb-1a00-493e-8bf5-52482d20fc57",
+   "resource": {
+    "resourceType": "Coverage",
+    "id": "d69eeccb-1a00-493e-8bf5-52482d20fc57",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Coverage"
+     ]
+    },
+    "status": "active",
+    "subscriber": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+     "display": "Patient"
+    },
+    "subscriberId": "SBXSTG269",
+    "beneficiary": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+     "display": "Patient"
+    },
+    "relationship": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+       "code": "self",
+       "display": "Self"
+      }
+     ]
+    },
+    "payor": [
+     {
+      "reference": "urn:uuid:5b702859-010c-4448-a741-022f152df4ec",
+      "display": "Organization"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://payer.nha.gov.in",
+      "value": "PMJAY/HP/S/G"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://irdai.gov.in/policy",
+      "value": "PMJAY/HP/S/G"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:c989f91f-edd1-44bc-a7fa-8af8c5abaada",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "c989f91f-edd1-44bc-a7fa-8af8c5abaada",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Procedure"
+     ]
+    },
+    "status": "preparation",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "SNO",
+         "display": "Serial Number"
+        }
+       ]
+      },
+      "system": "urn:hims:procedure",
+      "value": "1"
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+       "code": "US001A",
+       "display": "Unspecified Surgical Package"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+     "display": "Patient"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:4ab2cf23-5b3a-4ec3-8a24-08f081f99c4d",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "4ab2cf23-5b3a-4ec3-8a24-08f081f99c4d",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100020",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c"
+    },
+    "authored": "2026-11-10T06:39:16+05:30",
+    "item": [
+     {
+      "linkId": "100075",
+      "text": "Admission Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-08T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100074",
+      "text": "Surgery/Treatment Start Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-08T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100073",
+      "text": "Admission Type",
+      "answer": [
+       {
+        "valueString": "PLANNED"
+       }
+      ]
+     },
+     {
+      "linkId": "100076",
+      "text": "Medico Legal Case",
+      "answer": [
+       {
+        "valueString": "No"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:abce2a45-ab24-4628-a4e8-fe336cb79b5e",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "abce2a45-ab24-4628-a4e8-fe336cb79b5e",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100024",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c"
+    },
+    "authored": "2026-11-10T06:39:16+05:30",
+    "item": [
+     {
+      "linkId": "100093",
+      "text": "Medical Superintendent Declaration Form (During Admission)",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "ms-declaration-admission.pdf",
+         "creation": "2026-11-10T06:39:16+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "100095",
+      "text": "Remarks",
+      "answer": [
+       {
+        "valueString": "Patient present at admission; no biometric device. Declaration attached."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:8bba33e4-63b1-4487-a9e8-08f3cff7b98e",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "8bba33e4-63b1-4487-a9e8-08f3cff7b98e",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Procedure"
+     ]
+    },
+    "status": "preparation",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "SNO",
+         "display": "Serial Number"
+        }
+       ]
+      },
+      "system": "urn:hims:procedure",
+      "value": "2"
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+       "code": "SB017A",
+       "display": "Open Reduction Internal Fixation, extended stay"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:37cfe711-741d-4c35-83d3-d291e9fd9c8c",
+     "display": "Patient"
+    }
+   }
+  }
+ ]
+}

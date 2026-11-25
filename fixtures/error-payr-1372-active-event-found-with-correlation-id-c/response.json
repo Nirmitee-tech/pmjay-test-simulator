@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "0985f20b-d9c4-40c5-bbca-131f22d1f34f",
+ "x-hcx-correlation_id": "a1de0cc8-8fbb-4381-8e86-56a8438f2cd8",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794795236000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1372",
+  "message": "Active event found with correlation id c19370c6-1127-4bab-90e6-3a087c0c4722 for case number A/9008/26 which is awaiting process completion by payer / awaiting response from provider. No new event will be accepted for requested case until previous event is closed.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "claim",
+ "x-hcx-ben-abha-id": null
+}

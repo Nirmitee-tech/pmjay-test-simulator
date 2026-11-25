@@ -1,0 +1,162 @@
+{
+ "resourceType": "Bundle",
+ "id": "01678b5b-d621-44d5-94f2-50daeb1c94f6",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/TaskBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "9baa3c6b-e0f2-4666-a737-3ee23c3160db"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-16T13:31:05+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:bc5fe85f-588b-46ba-b443-a45382ac1103",
+   "resource": {
+    "resourceType": "Task",
+    "id": "bc5fe85f-588b-46ba-b443-a45382ac1103",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Task"
+     ]
+    },
+    "status": "requested",
+    "intent": "order",
+    "code": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/financialtaskcode",
+       "code": "cancel"
+      }
+     ]
+    },
+    "description": "Patient opted for conservative management; procedure not done.",
+    "authoredOn": "2026-11-16T13:31:05+05:30",
+    "requester": {
+     "reference": "urn:uuid:d758e9c1-6187-4993-ab14-d617c0a6c36d",
+     "display": "Organization"
+    },
+    "owner": {
+     "reference": "urn:uuid:531ced0c-4826-4542-a82f-1451de6cd469",
+     "display": "Organization"
+    },
+    "input": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-task-input-type-code",
+         "code": "claimNumber",
+         "display": "ClaimNumber"
+        }
+       ]
+      },
+      "valueString": "PMJAY/HP/S/2024/R2/2026111690000004"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-task-input-type-code",
+         "code": "initimationNumber",
+         "display": "initimationNumber"
+        }
+       ]
+      },
+      "valueString": "PMJAY/HP/S/2024/R2/2026111690000004"
+     }
+    ],
+    "reasonCode": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-reason-code",
+       "code": "alternativetreatment",
+       "display": "Alternative Treatment Chosen"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:d758e9c1-6187-4993-ab14-d617c0a6c36d",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "d758e9c1-6187-4993-ab14-d617c0a6c36d",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:531ced0c-4826-4542-a82f-1451de6cd469",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "531ced0c-4826-4542-a82f-1451de6cd469",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "ADITYA BIRLA HEALTH INSURANCE",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  }
+ ]
+}

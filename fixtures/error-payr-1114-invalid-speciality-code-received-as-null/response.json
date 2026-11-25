@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "1a762943-a668-4918-91e5-356a634479ff",
+ "x-hcx-correlation_id": "8f5bcdea-d683-407a-aa19-9a189dd62e50",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794219020000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1114",
+  "message": "Invalid speciality code received as null for item SB017A. Please try again with valid data. Speciality code is available as the code of the category for specific cost of plan in isurance plan.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

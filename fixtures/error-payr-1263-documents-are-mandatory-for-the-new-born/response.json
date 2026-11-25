@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "fef52425-5158-42b3-9a9e-5ce217edd5c2",
+ "x-hcx-correlation_id": "3bc44684-79de-47bc-b43c-851436cf2594",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1795147355000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1263",
+  "message": "Documents are mandatory for the new born beneficiary",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": null,
+ "x-hcx-ben-abha-id": null
+}

@@ -1,0 +1,32 @@
+{
+ "scenario": "claim-reprocess",
+ "outcome": "reprocess task accepted",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "task/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "task/on_submit",
+  "hcxStatus": "response.partial",
+  "errorCode": "100",
+  "errorMessage": "Message Submitted"
+ },
+ "ack": null,
+ "caseNumber": "A/9016/26",
+ "correlationId": "5a2a340e-3202-486f-b3e0-60731d73b9da",
+ "date": "2026-11-19",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 0,
+  "namesReplaced": 0,
+  "numbersReplaced": 0,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "A/9016/26 Task reprocess; 1518 answered task/on_submit response.partial with Task status accepted. No later final decision is in the traffic."
+}

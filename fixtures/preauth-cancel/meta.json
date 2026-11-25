@@ -1,0 +1,32 @@
+{
+ "scenario": "preauth-cancel",
+ "outcome": "pre-auth cancelled",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "task/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "task/on_submit",
+  "hcxStatus": "response.complete",
+  "errorCode": "100",
+  "errorMessage": "Message Submitted"
+ },
+ "ack": null,
+ "caseNumber": "A/9011/26",
+ "correlationId": "edd2d8b5-374d-4358-b737-a8d5dfba1285",
+ "date": "2026-11-16",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 0,
+  "namesReplaced": 0,
+  "numbersReplaced": 0,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "A/9011/26, 16 Nov. Task cancel, reason alternativetreatment. The real reply contains no PC02 code; ClaimResponse adjudication status is cancelled."
+}

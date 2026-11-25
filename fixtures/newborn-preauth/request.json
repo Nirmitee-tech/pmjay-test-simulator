@@ -1,0 +1,929 @@
+{
+ "resourceType": "Bundle",
+ "id": "9c0d5ad8-803c-484a-94ad-d80e41c14f0a",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/ClaimBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "c0c8167c-3201-4869-be59-76c0c60556ba"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-20T09:48:14+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:c929ba86-dbac-42ac-8041-374b293086fc",
+   "resource": {
+    "resourceType": "Claim",
+    "id": "c929ba86-dbac-42ac-8041-374b293086fc",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Claim"
+     ]
+    },
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "CLN",
+         "display": "Claim number"
+        }
+       ]
+      },
+      "system": "https://nhcx.abdm.gov.in",
+      "value": "A/9020/26"
+     }
+    ],
+    "status": "active",
+    "type": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "737481003",
+       "display": "Inpatient care management (procedure)"
+      }
+     ]
+    },
+    "use": "preauthorization",
+    "patient": {
+     "reference": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661",
+     "display": "Patient"
+    },
+    "created": "2026-11-20T09:48:14+05:30",
+    "insurer": {
+     "reference": "urn:uuid:59b27ba3-87a5-40bb-8a24-c5c3c42109d3",
+     "display": "Organization"
+    },
+    "provider": {
+     "reference": "urn:uuid:015084b7-d542-455b-971a-7521ff355495",
+     "display": "Organization"
+    },
+    "priority": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+       "code": "normal",
+       "display": "Normal"
+      }
+     ]
+    },
+    "billablePeriod": {
+     "start": "2026-11-20T08:46:43+05:30",
+     "end": "2026-11-22"
+    },
+    "enterer": {
+     "display": "1"
+    },
+    "facility": {
+     "display": "TEST HOSPITAL, Deluxe - SF"
+    },
+    "careTeam": [
+     {
+      "sequence": 1,
+      "provider": {
+       "reference": "urn:uuid:550656c5-7e52-404a-948a-26f8eed29993",
+       "display": "Practitioner"
+      },
+      "role": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+         "code": "primary",
+         "display": "Primary provider"
+        }
+       ]
+      }
+     }
+    ],
+    "diagnosis": [
+     {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10",
+         "code": "I20.0",
+         "display": "Unstable angina"
+        }
+       ]
+      },
+      "type": [
+       {
+        "coding": [
+         {
+          "system": "http://snomed.info/sct",
+          "code": "148006",
+          "display": "Preliminary diagnosis (contextual qualifier) (qualifier value)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "procedure": [
+     {
+      "sequence": 1,
+      "procedureReference": {
+       "reference": "urn:uuid:e56870d4-29a3-468a-8953-8ead910f484c",
+       "display": "Neonates 1800-2500g  OR Neonates of any weight requiring closer monitoring or short-term care on mother's bedside for conditions like, but not limited to:  o Birth asphyxia (need for positive pressure ventilation at birth; no HIE) o Moderate jaundice requi"
+      },
+      "id": "Procedure/1"
+     }
+    ],
+    "insurance": [
+     {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+       "reference": "urn:uuid:923ee721-bfe2-4e87-bc85-4ef23e7dd428",
+       "display": "Coverage"
+      }
+     }
+    ],
+    "supportingInfo": [
+     {
+      "sequence": 1,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "OTH",
+         "display": "Other"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "EDT",
+         "display": "EncounterDateTime"
+        }
+       ]
+      },
+      "valueString": "2026-11-20T08:46:43+05:30",
+      "id": "SupportingInformation/1"
+     },
+     {
+      "sequence": 2,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ONS",
+         "display": "Period, start or end dates of aspects of the Condition. (e.g. admission, discharge etc)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ADDD",
+         "display": "Admission date -Discharge date"
+        }
+       ]
+      },
+      "valueString": "2026-11-20T08:46:43+05:30",
+      "id": "SupportingInformation/2"
+     },
+     {
+      "sequence": 3,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "NMI",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "CQD",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "valueString": "Admitted with chest pain; procedure planned tomorrow.",
+      "id": "SupportingInformation/3"
+     },
+     {
+      "sequence": 4,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0437",
+         "display": "supporting investigations"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "supporting investigations",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/4"
+     },
+     {
+      "sequence": 5,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0092",
+         "display": "all investigations"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "all investigations",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/5"
+     },
+     {
+      "sequence": 6,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0091",
+         "display": "Detailed treatment notes"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Detailed treatment notes",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/6"
+     },
+     {
+      "sequence": 7,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0436",
+         "display": "Detailed clinical notes (incl trigger for hospitalization and examiantion findings)"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Detailed clinical notes (incl trigger for hospitalization and examiantion findings)",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/7"
+     },
+     {
+      "sequence": 8,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "DOB",
+         "display": "Date of birth"
+        }
+       ],
+       "text": "Date of birth"
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "BCF",
+         "display": "Birth Certificate"
+        }
+       ],
+       "text": "Birth Certificate"
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+       "creation": "2026-11-18",
+       "title": "Birth Certificate"
+      },
+      "id": "SupportingInformation/8"
+     },
+     {
+      "sequence": 9,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:2bcb3101-9790-4c09-a328-93b62d54131e"
+      },
+      "id": "SupportingInformation/9"
+     },
+     {
+      "sequence": 10,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:bd878ac0-41bd-48d7-bb6d-ec6c24dceb8d"
+      },
+      "id": "SupportingInformation/10"
+     }
+    ],
+    "item": [
+     {
+      "sequence": 1,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       1
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MN",
+         "display": "Neo-natal care Packages"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "MN001A",
+         "display": "Neonates 1800-2500g  OR Neonates of any weight requiring closer monitoring or short-term care on mother's bedside for conditions like, but not limited to:  o Birth asphyxia (need for positive pressure ventilation at birth; no HIE) o Moderate jaundice requiring phototherapy o Large for dates (>97 percentile) or Small for gestational age (less than 3rd centile)                                                                                                                                   o Rule-out sepsis .                                                                                                                                                                                                                                         o Investigations warranted because of antenatal scan findings.                                                                                                                                                                            Includes activities listed under Basic Neonatal care package and Kangaroo Mother Care support (Basic neonatal care package: Babies that can be managed by side of mother in postnatal ward without requiring admission in SNCU/NICU: Any newborn needing feeding support Babies requiring closer monitoring or short-term care for conditions like: o Birth asphyxia (need for positive pressure ventilation; no HIE)o Moderate jaundice requiring phototherapyo Large for dates (>97 percentile) Babies o Small for gestational age (less than 3rd centile)  )"
+        }
+       ]
+      },
+      "servicedPeriod": {
+       "start": "2026-11-20",
+       "end": "2026-11-22"
+      },
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 500.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 500.0,
+       "currency": "INR"
+      },
+      "modifier": [
+       {
+        "coding": [
+         {
+          "system": "https://payer.pmjay.nha.gov.in",
+          "code": "STRAT017a",
+          "display": "Routine Ward"
+         }
+        ]
+       }
+      ],
+      "id": "Item/1",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "total": {
+     "value": 500.0,
+     "currency": "INR"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "bedc7cb1-4e9d-445b-ab51-89bbcf11f661",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "name": [
+     {
+      "text": "TEST PATIENT"
+     }
+    ],
+    "gender": "female",
+    "birthDate": "1990-01-01",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "PMJAY Member ID"
+        }
+       ]
+      },
+      "system": "https://bis.pmjay.gov.in",
+      "value": "SBXSTG269"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MR",
+         "display": "Medical record number"
+        }
+       ]
+      },
+      "system": "https://ndhm.in/mrn",
+      "value": "U/902/26"
+     }
+    ],
+    "link": [
+     {
+      "type": "refer",
+      "other": {
+       "reference": "urn:uuid:adfba150-5187-46e7-b432-8d4ab296313a",
+       "type": "Patient"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:015084b7-d542-455b-971a-7521ff355495",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "015084b7-d542-455b-971a-7521ff355495",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:59b27ba3-87a5-40bb-8a24-c5c3c42109d3",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "59b27ba3-87a5-40bb-8a24-c5c3c42109d3",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "PMJAY",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:550656c5-7e52-404a-948a-26f8eed29993",
+   "resource": {
+    "resourceType": "Practitioner",
+    "id": "550656c5-7e52-404a-948a-26f8eed29993",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner"
+     ]
+    },
+    "name": [
+     {
+      "text": "DR TEST DOCTOR"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "HPIN",
+         "display": "Health Practitioner ID issued by NDHM"
+        }
+       ]
+      },
+      "system": "https://hpr.abdm.gov.in",
+      "value": "00-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MD",
+         "display": "Medical License number"
+        }
+       ]
+      },
+      "system": "https://doctor.ndhm.gov.in",
+      "value": "00-0000-0000-0000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:923ee721-bfe2-4e87-bc85-4ef23e7dd428",
+   "resource": {
+    "resourceType": "Coverage",
+    "id": "923ee721-bfe2-4e87-bc85-4ef23e7dd428",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Coverage"
+     ]
+    },
+    "status": "active",
+    "subscriber": {
+     "reference": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661",
+     "display": "Patient"
+    },
+    "subscriberId": "SBXSTG269",
+    "beneficiary": {
+     "reference": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661",
+     "display": "Patient"
+    },
+    "relationship": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+       "code": "self",
+       "display": "Self"
+      }
+     ]
+    },
+    "payor": [
+     {
+      "reference": "urn:uuid:59b27ba3-87a5-40bb-8a24-c5c3c42109d3",
+      "display": "Organization"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://payer.nha.gov.in",
+      "value": "PMJAY/HP/S/G"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://irdai.gov.in/policy",
+      "value": "PMJAY/HP/S/G"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:e56870d4-29a3-468a-8953-8ead910f484c",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "e56870d4-29a3-468a-8953-8ead910f484c",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Procedure"
+     ]
+    },
+    "status": "preparation",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "SNO",
+         "display": "Serial Number"
+        }
+       ]
+      },
+      "system": "urn:hims:procedure",
+      "value": "1"
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+       "code": "MN001A",
+       "display": "Neonates 1800-2500g  OR Neonates of any weight requiring closer monitoring or short-term care on mother's bedside for conditions like, but not limited to:  o Birth asphyxia (need for positive pressure ventilation at birth; no HIE) o Moderate jaundice requi"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661",
+     "display": "Patient"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:adfba150-5187-46e7-b432-8d4ab296313a",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "adfba150-5187-46e7-b432-8d4ab296313a",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "Pradhan Mantri Jan Aarogya Yojana (PMJAY) ID"
+        }
+       ]
+      },
+      "system": "https://bis.pmjay.gov.in",
+      "value": "SBXSTG269"
+     }
+    ],
+    "name": [
+     {
+      "text": "TEST PATIENT",
+      "family": "",
+      "given": [
+       "TEST PATIENT"
+      ]
+     }
+    ],
+    "telecom": [
+     {
+      "system": "phone",
+      "value": ""
+     }
+    ],
+    "gender": "female",
+    "birthDate": "2026-11-10",
+    "contact": [
+     {
+      "relationship": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+         "code": "C",
+         "display": "Emergency Contact"
+        }
+       ]
+      },
+      "name": {
+       "text": "TEST PATIENT",
+       "family": "TEST PATIENT",
+       "given": [
+        "TEST PATIENT"
+       ]
+      },
+      "telecom": [
+       {
+        "system": "phone",
+        "value": ""
+       }
+      ]
+     }
+    ],
+    "link": []
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:2bcb3101-9790-4c09-a328-93b62d54131e",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "2bcb3101-9790-4c09-a328-93b62d54131e",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100020",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661"
+    },
+    "authored": "2026-11-20T09:48:18+05:30",
+    "item": [
+     {
+      "linkId": "100075",
+      "text": "Admission Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-19T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100074",
+      "text": "Surgery/Treatment Start Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-19T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100073",
+      "text": "Admission Type",
+      "answer": [
+       {
+        "valueString": "EMERGENCY"
+       }
+      ]
+     },
+     {
+      "linkId": "100076",
+      "text": "Medico Legal Case",
+      "answer": [
+       {
+        "valueString": "No"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:bd878ac0-41bd-48d7-bb6d-ec6c24dceb8d",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "bd878ac0-41bd-48d7-bb6d-ec6c24dceb8d",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100024",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:bedc7cb1-4e9d-445b-ab51-89bbcf11f661"
+    },
+    "authored": "2026-11-20T09:48:19+05:30",
+    "item": [
+     {
+      "linkId": "100093",
+      "text": "Medical Superintendent Declaration Form (During Admission)",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "declaration-form.pdf",
+         "creation": "2026-11-20T09:48:19+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "100095",
+      "text": "Remarks",
+      "answer": [
+       {
+        "valueString": "Mother present at admission; declaration signed by the Medical Superintendent."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

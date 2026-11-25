@@ -1,0 +1,327 @@
+{
+ "resourceType": "Bundle",
+ "id": "8807f248-7999-482a-9b8f-b98e40806838",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/CoverageEligibilityRequestBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "8d953382-29b5-4809-aed9-380652f7f776"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-16T06:41:33+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:56ec67c0-8b74-4698-a02c-612c31d47d0f",
+   "resource": {
+    "resourceType": "CoverageEligibilityRequest",
+    "id": "56ec67c0-8b74-4698-a02c-612c31d47d0f",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/CoverageEligibilityRequest"
+     ]
+    },
+    "identifier": [
+     {
+      "system": "https://facility.ndhm.gov.in",
+      "value": "56ec67c0-8b74-4698-a02c-612c31d47d0f"
+     }
+    ],
+    "status": "active",
+    "purpose": [
+     "validation"
+    ],
+    "patient": {
+     "reference": "urn:uuid:fa423243-2373-4966-9c49-cc1d21335fb0",
+     "display": "Patient"
+    },
+    "created": "2026-11-16T06:41:33+05:30",
+    "provider": {
+     "reference": "urn:uuid:1008e17a-399c-4169-a793-ee2789a2e0c3",
+     "display": "Organization"
+    },
+    "insurer": {
+     "reference": "urn:uuid:ba1af5e0-949e-4e94-af92-6ca7297d6f14",
+     "display": "Organization"
+    },
+    "priority": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+       "code": "normal",
+       "display": "Normal"
+      }
+     ]
+    },
+    "enterer": {
+     "reference": "urn:uuid:fccce2e3-75d4-4d6a-8ff4-c144cccee06e",
+     "display": "Practitioner"
+    },
+    "facility": {
+     "reference": "urn:uuid:60c0fd00-4a3b-410d-aaa5-997efa519904",
+     "display": "Location"
+    },
+    "insurance": [
+     {
+      "focal": true,
+      "coverage": {
+       "reference": "urn:uuid:a3632778-afba-40bc-9d10-ed0cf3033982",
+       "display": "Coverage"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:fa423243-2373-4966-9c49-cc1d21335fb0",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "fa423243-2373-4966-9c49-cc1d21335fb0",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "name": [
+     {
+      "text": "TEST PATIENT"
+     }
+    ],
+    "gender": "male",
+    "birthDate": "1990-01-01",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "PMJAY Member ID"
+        }
+       ]
+      },
+      "system": "https://bis.pmjay.gov.in",
+      "value": "PT00000001"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MR",
+         "display": "Medical record number"
+        }
+       ]
+      },
+      "system": "https://ndhm.in/mrn",
+      "value": "U/903/26"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:1008e17a-399c-4169-a793-ee2789a2e0c3",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "1008e17a-399c-4169-a793-ee2789a2e0c3",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ba1af5e0-949e-4e94-af92-6ca7297d6f14",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "ba1af5e0-949e-4e94-af92-6ca7297d6f14",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "ADITYA BIRLA HEALTH INSURANCE",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1000003315@hcx"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:fccce2e3-75d4-4d6a-8ff4-c144cccee06e",
+   "resource": {
+    "resourceType": "Practitioner",
+    "id": "fccce2e3-75d4-4d6a-8ff4-c144cccee06e",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner"
+     ]
+    },
+    "name": [
+     {
+      "text": "DR TEST DOCTOR"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "HPIN",
+         "display": "Health Practitioner ID issued by NDHM"
+        }
+       ]
+      },
+      "system": "https://hpr.abdm.gov.in",
+      "value": "00-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MD",
+         "display": "Medical License number"
+        }
+       ]
+      },
+      "system": "https://doctor.ndhm.gov.in",
+      "value": "00-0000-0000-0000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:a3632778-afba-40bc-9d10-ed0cf3033982",
+   "resource": {
+    "resourceType": "Coverage",
+    "id": "a3632778-afba-40bc-9d10-ed0cf3033982",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Coverage"
+     ]
+    },
+    "status": "active",
+    "subscriber": {
+     "reference": "urn:uuid:fa423243-2373-4966-9c49-cc1d21335fb0",
+     "display": "Patient"
+    },
+    "subscriberId": "PT00000001",
+    "beneficiary": {
+     "reference": "urn:uuid:fa423243-2373-4966-9c49-cc1d21335fb0",
+     "display": "Patient"
+    },
+    "relationship": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+       "code": "self",
+       "display": "Self"
+      }
+     ]
+    },
+    "payor": [
+     {
+      "reference": "urn:uuid:ba1af5e0-949e-4e94-af92-6ca7297d6f14",
+      "display": "Organization"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://payer.nha.gov.in",
+      "value": "0000/00-00-0000000-01"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://irdai.gov.in/policy",
+      "value": "100217"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:60c0fd00-4a3b-410d-aaa5-997efa519904",
+   "resource": {
+    "resourceType": "Location",
+    "id": "60c0fd00-4a3b-410d-aaa5-997efa519904",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Location"
+     ]
+    },
+    "status": "active",
+    "name": "TEST HOSPITAL"
+   }
+  }
+ ]
+}

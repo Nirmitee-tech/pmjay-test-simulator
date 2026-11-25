@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "82a51d4d-f3c5-4efe-b044-5ab575443406",
+ "x-hcx-correlation_id": "7be217df-988f-4851-b019-509432475d33",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794552535000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "HBP039",
+  "message": "Selected Policy Code is invalid.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

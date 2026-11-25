@@ -1,0 +1,36 @@
+{
+ "scenario": "newborn-claim",
+ "outcome": "newborn claim approved",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "claim/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.complete",
+  "errorCode": "100",
+  "errorMessage": "Message Submitted"
+ },
+ "ack": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.partial"
+ },
+ "caseNumber": "A/9020/26",
+ "correlationId": "4964e88c-632c-469c-9680-92617d7e6d45",
+ "date": "2026-11-20",
+ "files": [
+  "request.json",
+  "response-ack.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 16,
+  "namesReplaced": 4,
+  "numbersReplaced": 1,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "A/9020/26."
+}

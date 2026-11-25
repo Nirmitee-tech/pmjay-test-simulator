@@ -1,0 +1,1011 @@
+{
+ "resourceType": "Bundle",
+ "id": "102b922b-dbb7-4c1b-a50b-f631bebd35ec",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/ClaimBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "44ffcad3-8ec8-4d1e-aa0a-5cb55be4af0f"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-16T10:08:39+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:62968a8b-9031-4b18-9cc1-3584f01b4e76",
+   "resource": {
+    "resourceType": "Claim",
+    "id": "62968a8b-9031-4b18-9cc1-3584f01b4e76",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Claim"
+     ]
+    },
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "CLN",
+         "display": "Claim number"
+        }
+       ]
+      },
+      "system": "https://nhcx.abdm.gov.in",
+      "value": "A/9010/26"
+     }
+    ],
+    "status": "active",
+    "type": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "737481003",
+       "display": "Inpatient care management (procedure)"
+      }
+     ]
+    },
+    "use": "preauthorization",
+    "patient": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+     "display": "Patient"
+    },
+    "created": "2026-11-16T10:08:39+05:30",
+    "insurer": {
+     "reference": "urn:uuid:50aaf8ac-9179-4ca2-b267-e355b0a3193c",
+     "display": "Organization"
+    },
+    "provider": {
+     "reference": "urn:uuid:0f05a1c9-bb73-4851-80f8-5224b124c461",
+     "display": "Organization"
+    },
+    "priority": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+       "code": "normal",
+       "display": "Normal"
+      }
+     ]
+    },
+    "billablePeriod": {
+     "start": "2026-11-16T06:45:43+05:30",
+     "end": "2026-11-18"
+    },
+    "enterer": {
+     "display": "1"
+    },
+    "facility": {
+     "display": "TEST HOSPITAL, Deluxe - SF"
+    },
+    "careTeam": [
+     {
+      "sequence": 1,
+      "provider": {
+       "reference": "urn:uuid:db2a1bb2-bc90-4c0e-8dcb-8d397696e040",
+       "display": "Practitioner"
+      },
+      "role": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+         "code": "primary",
+         "display": "Primary provider"
+        }
+       ]
+      }
+     }
+    ],
+    "diagnosis": [
+     {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10",
+         "code": "I20.0",
+         "display": "Unstable angina"
+        }
+       ]
+      },
+      "type": [
+       {
+        "coding": [
+         {
+          "system": "http://snomed.info/sct",
+          "code": "148006",
+          "display": "Preliminary diagnosis (contextual qualifier) (qualifier value)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "procedure": [
+     {
+      "sequence": 1,
+      "procedureReference": {
+       "reference": "urn:uuid:ce72001e-6b41-4e5c-a2c0-1170a98b799e",
+       "display": "Simple head injury"
+      },
+      "id": "Procedure/1"
+     },
+     {
+      "sequence": 2,
+      "procedureReference": {
+       "reference": "urn:uuid:959544bf-c808-4316-9456-9b11d9bceddb",
+       "display": "Accelerated hypertension (Accelerated hypertension)"
+      },
+      "id": "Procedure/2"
+     }
+    ],
+    "insurance": [
+     {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+       "reference": "urn:uuid:c84b2230-ba9a-474b-8633-99c81d0acdae",
+       "display": "Coverage"
+      },
+      "preAuthRef": [
+       "PMJAY/HP/S/2024/R2/2026111690000003"
+      ]
+     }
+    ],
+    "supportingInfo": [
+     {
+      "sequence": 1,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "OTH",
+         "display": "Other"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "EDT",
+         "display": "EncounterDateTime"
+        }
+       ]
+      },
+      "valueString": "2026-11-16T06:45:43+05:30",
+      "id": "SupportingInformation/1"
+     },
+     {
+      "sequence": 2,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ONS",
+         "display": "Period, start or end dates of aspects of the Condition. (e.g. admission, discharge etc)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ADDD",
+         "display": "Admission date -Discharge date"
+        }
+       ]
+      },
+      "valueString": "2026-11-16T06:45:43+05:30",
+      "id": "SupportingInformation/2"
+     },
+     {
+      "sequence": 3,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:04a39a30-13c7-4bc7-a1f1-6bbe52bf1675"
+      },
+      "id": "SupportingInformation/3"
+     },
+     {
+      "sequence": 4,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:918eea15-1082-4dea-a8b6-d59b3770b9ae"
+      },
+      "id": "SupportingInformation/4"
+     },
+     {
+      "sequence": 5,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "NMI",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "CQD",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "valueString": "Enhancement requested: Developed accelerated hypertension on day 2, HDU care needed.",
+      "id": "SupportingInformation/5"
+     },
+     {
+      "sequence": 6,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0409",
+         "display": "any investigations done"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "any investigations done",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/6"
+     },
+     {
+      "sequence": 7,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0064",
+         "display": "All investigations reports"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "All investigations reports",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/7"
+     },
+     {
+      "sequence": 8,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0062",
+         "display": "Detailed ICPs"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Detailed ICPs",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/8"
+     },
+     {
+      "sequence": 9,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0063",
+         "display": "Treatment details"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Treatment details",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/9"
+     },
+     {
+      "sequence": 10,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0408",
+         "display": "Clinical notes detailing history and Admission notes showing vitals and examination findings"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Clinical notes detailing history and Admission notes showing vitals and examination findings",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/10"
+     }
+    ],
+    "item": [
+     {
+      "sequence": 1,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       1
+      ],
+      "informationSequence": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "SN",
+         "display": "Neurosurgery"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "SN063D",
+         "display": "Simple head injury (Simple head injury)"
+        }
+       ]
+      },
+      "servicedPeriod": {
+       "start": "2026-11-16",
+       "end": "2026-11-18"
+      },
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 1800.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 1800.0,
+       "currency": "INR"
+      },
+      "modifier": [
+       {
+        "coding": [
+         {
+          "system": "https://payer.pmjay.nha.gov.in",
+          "code": "STRAT006a",
+          "display": "Routine Ward"
+         }
+        ]
+       }
+      ],
+      "id": "Item/1",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sequence": 2,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       2
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MG",
+         "display": "General Medicine"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "MG062A",
+         "display": "Accelerated hypertension (Accelerated hypertension)"
+        }
+       ]
+      },
+      "servicedPeriod": {
+       "start": "2026-11-16",
+       "end": "2026-11-18"
+      },
+      "modifier": [
+       {
+        "coding": [
+         {
+          "system": "https://payer.pmjay.nha.gov.in",
+          "code": "STRAT006a",
+          "display": "Routine Ward"
+         }
+        ]
+       }
+      ],
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 1800.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 1800.0,
+       "currency": "INR"
+      },
+      "informationSequence": [
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "id": "Item/2",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "total": {
+     "value": 3600.0,
+     "currency": "INR"
+    },
+    "related": [
+     {
+      "claim": {
+       "identifier": {
+        "value": "PMJAY/HP/S/2024/R2/2026111690000003"
+       }
+      },
+      "relationship": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+         "code": "prior",
+         "display": "Prior Claim"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "name": [
+     {
+      "text": "TEST PATIENT"
+     }
+    ],
+    "gender": "male",
+    "birthDate": "1990-01-01",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "ABHA",
+         "display": "ABHA Number"
+        }
+       ]
+      },
+      "system": "https://healthid.ndhm.gov.in",
+      "value": "91-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "PMJAY Member ID"
+        }
+       ]
+      },
+      "system": "https://bis.pmjay.gov.in",
+      "value": "SBXSTG269"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MR",
+         "display": "Medical record number"
+        }
+       ]
+      },
+      "system": "https://ndhm.in/mrn",
+      "value": "U/904/26"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:0f05a1c9-bb73-4851-80f8-5224b124c461",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "0f05a1c9-bb73-4851-80f8-5224b124c461",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:50aaf8ac-9179-4ca2-b267-e355b0a3193c",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "50aaf8ac-9179-4ca2-b267-e355b0a3193c",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "ADITYA BIRLA HEALTH INSURANCE",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:db2a1bb2-bc90-4c0e-8dcb-8d397696e040",
+   "resource": {
+    "resourceType": "Practitioner",
+    "id": "db2a1bb2-bc90-4c0e-8dcb-8d397696e040",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner"
+     ]
+    },
+    "name": [
+     {
+      "text": "DR TEST DOCTOR"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "HPIN",
+         "display": "Health Practitioner ID issued by NDHM"
+        }
+       ]
+      },
+      "system": "https://hpr.abdm.gov.in",
+      "value": "00-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MD",
+         "display": "Medical License number"
+        }
+       ]
+      },
+      "system": "https://doctor.ndhm.gov.in",
+      "value": "00-0000-0000-0000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:c84b2230-ba9a-474b-8633-99c81d0acdae",
+   "resource": {
+    "resourceType": "Coverage",
+    "id": "c84b2230-ba9a-474b-8633-99c81d0acdae",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Coverage"
+     ]
+    },
+    "status": "active",
+    "subscriber": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+     "display": "Patient"
+    },
+    "subscriberId": "SBXSTG269",
+    "beneficiary": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+     "display": "Patient"
+    },
+    "relationship": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+       "code": "self",
+       "display": "Self"
+      }
+     ]
+    },
+    "payor": [
+     {
+      "reference": "urn:uuid:50aaf8ac-9179-4ca2-b267-e355b0a3193c",
+      "display": "Organization"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://payer.nha.gov.in",
+      "value": "PMJAY/HP/S/G"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://irdai.gov.in/policy",
+      "value": "PMJAY/HP/S/G"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ce72001e-6b41-4e5c-a2c0-1170a98b799e",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "ce72001e-6b41-4e5c-a2c0-1170a98b799e",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Procedure"
+     ]
+    },
+    "status": "preparation",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "SNO",
+         "display": "Serial Number"
+        }
+       ]
+      },
+      "system": "urn:hims:procedure",
+      "value": "1"
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+       "code": "SN063D",
+       "display": "Simple head injury"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+     "display": "Patient"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:04a39a30-13c7-4bc7-a1f1-6bbe52bf1675",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "04a39a30-13c7-4bc7-a1f1-6bbe52bf1675",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100020",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61"
+    },
+    "authored": "2026-11-16T09:07:01+05:30",
+    "item": [
+     {
+      "linkId": "100075",
+      "text": "Admission Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-15T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100074",
+      "text": "Surgery/Treatment Start Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-15T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100073",
+      "text": "Admission Type",
+      "answer": [
+       {
+        "valueString": "PLANNED"
+       }
+      ]
+     },
+     {
+      "linkId": "100076",
+      "text": "Medico Legal Case",
+      "answer": [
+       {
+        "valueString": "No"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:918eea15-1082-4dea-a8b6-d59b3770b9ae",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "918eea15-1082-4dea-a8b6-d59b3770b9ae",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100024",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61"
+    },
+    "authored": "2026-11-16T09:07:01+05:30",
+    "item": [
+     {
+      "linkId": "100093",
+      "text": "Medical Superintendent Declaration Form (During Admission)",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "declaration-form.pdf",
+         "creation": "2026-11-16T09:07:01+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "100095",
+      "text": "Remarks",
+      "answer": [
+       {
+        "valueString": "Patient present at admission; declaration signed by the Medical Superintendent."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:959544bf-c808-4316-9456-9b11d9bceddb",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "959544bf-c808-4316-9456-9b11d9bceddb",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Procedure"
+     ]
+    },
+    "status": "preparation",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "SNO",
+         "display": "Serial Number"
+        }
+       ]
+      },
+      "system": "urn:hims:procedure",
+      "value": "2"
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+       "code": "MG062A",
+       "display": "Accelerated hypertension (Accelerated hypertension)"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:a98e4dfa-c799-4d85-9a7c-d0c57569de61",
+     "display": "Patient"
+    }
+   }
+  }
+ ]
+}

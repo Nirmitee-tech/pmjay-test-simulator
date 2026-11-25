@@ -1,0 +1,298 @@
+{
+ "participantdetails": [
+  {
+   "participantcode": "33335@hcx",
+   "participantname": "CAPF",
+   "address": null,
+   "state": "CAPF"
+  },
+  {
+   "participantcode": "33712@hcx",
+   "participantname": "CAPF",
+   "address": null,
+   "state": "CAPF"
+  },
+  {
+   "participantcode": "33807@hcx",
+   "participantname": "CGHS",
+   "address": null,
+   "state": "CGHS"
+  },
+  {
+   "participantcode": "32222@hcx",
+   "participantname": "CGHS",
+   "address": null,
+   "state": "CGHS"
+  },
+  {
+   "participantcode": "40994@hcx",
+   "participantname": "ESIC",
+   "address": null,
+   "state": "ESIC"
+  },
+  {
+   "participantcode": "46161@hcx",
+   "participantname": "NAMASTE",
+   "address": null,
+   "state": "NAMASTE"
+  },
+  {
+   "participantcode": "44650@hcx",
+   "participantname": "NDRF",
+   "address": null,
+   "state": "NDRF"
+  },
+  {
+   "participantcode": "41345@hcx",
+   "participantname": "PM RAHAT",
+   "address": null,
+   "state": "PM RAHAT"
+  },
+  {
+   "participantcode": "46162@hcx",
+   "participantname": "PMCARE",
+   "address": null,
+   "state": "PMCARE"
+  },
+  {
+   "participantcode": "91R@hcx",
+   "participantname": "Reimbursement",
+   "address": null,
+   "state": "CAPF"
+  },
+  {
+   "participantcode": "1523@hcx",
+   "participantname": "SHA ANI",
+   "address": null,
+   "state": "ANDAMAN AND NICOBAR ISLAND"
+  },
+  {
+   "participantcode": "7069@hcx",
+   "participantname": "SHA AP",
+   "address": null,
+   "state": "ANDHRA PRADESH"
+  },
+  {
+   "participantcode": "25769@hcx",
+   "participantname": "SHA AR",
+   "address": null,
+   "state": "Arunachal Pradesh"
+  },
+  {
+   "participantcode": "25773@hcx",
+   "participantname": "SHA Assam",
+   "address": null,
+   "state": "Assam"
+  },
+  {
+   "participantcode": "4667@hcx",
+   "participantname": "SHA Bihar",
+   "address": null,
+   "state": "Bihar"
+  },
+  {
+   "participantcode": "1935@hcx",
+   "participantname": "SHA CG",
+   "address": null,
+   "state": "Chhattisgarh"
+  },
+  {
+   "participantcode": "7078@hcx",
+   "participantname": "SHA Chandigarh",
+   "address": null,
+   "state": "Chandigarh"
+  },
+  {
+   "participantcode": "32011@hcx",
+   "participantname": "SHA Delhi",
+   "address": null,
+   "state": "DELHI"
+  },
+  {
+   "participantcode": "30709@hcx",
+   "participantname": "SHA DNH and DD",
+   "address": null,
+   "state": "DNH and DD"
+  },
+  {
+   "participantcode": "25771@hcx",
+   "participantname": "SHA Goa",
+   "address": null,
+   "state": "GOA"
+  },
+  {
+   "participantcode": "7074@hcx",
+   "participantname": "SHA Gujarat",
+   "address": null,
+   "state": "Gujarat"
+  },
+  {
+   "participantcode": "103@hcx",
+   "participantname": "SHA Haryana",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1518@hcx",
+   "participantname": "SHA HP",
+   "address": null,
+   "state": "Himachal Pradesh"
+  },
+  {
+   "participantcode": "4666@hcx",
+   "participantname": "SHA JH",
+   "address": null,
+   "state": "Jharkhand"
+  },
+  {
+   "participantcode": "105@hcx",
+   "participantname": "SHA JK",
+   "address": null,
+   "state": "Jammu Kashmir"
+  },
+  {
+   "participantcode": "7070@hcx",
+   "participantname": "SHA KA",
+   "address": null,
+   "state": "KARNATAKA"
+  },
+  {
+   "participantcode": "4668@hcx",
+   "participantname": "SHA Kerala",
+   "address": null,
+   "state": "Kerala"
+  },
+  {
+   "participantcode": "1554@hcx",
+   "participantname": "SHA Ladakh",
+   "address": null,
+   "state": "Ladakh"
+  },
+  {
+   "participantcode": "7072@hcx",
+   "participantname": "SHA Lakshadweep",
+   "address": null,
+   "state": "Lakshadweep"
+  },
+  {
+   "participantcode": "25767@hcx",
+   "participantname": "SHA Manipur",
+   "address": null,
+   "state": "Manipur"
+  },
+  {
+   "participantcode": "25764@hcx",
+   "participantname": "SHA Meghalaya",
+   "address": null,
+   "state": "Meghalaya"
+  },
+  {
+   "participantcode": "7076@hcx",
+   "participantname": "SHA MH",
+   "address": null,
+   "state": "MAHARASHTRA"
+  },
+  {
+   "participantcode": "25766@hcx",
+   "participantname": "SHA Mizoram",
+   "address": null,
+   "state": "Mizoram"
+  },
+  {
+   "participantcode": "1921@hcx",
+   "participantname": "SHA MP",
+   "address": null,
+   "state": "Madhya Pradesh"
+  },
+  {
+   "participantcode": "25768@hcx",
+   "participantname": "SHA Nagaland",
+   "address": null,
+   "state": "Nagaland"
+  },
+  {
+   "participantcode": "34241@hcx",
+   "participantname": "SHA NAMASTE",
+   "address": null,
+   "state": "NAMASTE"
+  },
+  {
+   "participantcode": "32010@hcx",
+   "participantname": "SHA OR",
+   "address": null,
+   "state": "ODISHA"
+  },
+  {
+   "participantcode": "34242@hcx",
+   "participantname": "SHA PMCARE",
+   "address": null,
+   "state": "PMCARE"
+  },
+  {
+   "participantcode": "1522@hcx",
+   "participantname": "SHA Puducherry",
+   "address": null,
+   "state": "Puducherry"
+  },
+  {
+   "participantcode": "7077@hcx",
+   "participantname": "SHA Punjab",
+   "address": null,
+   "state": "Punjab"
+  },
+  {
+   "participantcode": "7075@hcx",
+   "participantname": "SHA Rajasthan",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "25770@hcx",
+   "participantname": "SHA Sikkim",
+   "address": null,
+   "state": "Sikkim"
+  },
+  {
+   "participantcode": "34240@hcx",
+   "participantname": "SHA SMILE",
+   "address": null,
+   "state": "SMILE"
+  },
+  {
+   "participantcode": "7073@hcx",
+   "participantname": "SHA TN",
+   "address": null,
+   "state": "SHA TN"
+  },
+  {
+   "participantcode": "25765@hcx",
+   "participantname": "SHA Tripura",
+   "address": null,
+   "state": "TRIPURA"
+  },
+  {
+   "participantcode": "104@hcx",
+   "participantname": "SHA UK",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "25772@hcx",
+   "participantname": "SHA UP",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "46160@hcx",
+   "participantname": "SMILE",
+   "address": null,
+   "state": "SMILE"
+  },
+  {
+   "participantcode": "6428@hcx",
+   "participantname": "TALUK HEAD QUARTERS HOSPITAL CHERTHALA",
+   "address": "longitude:76.3400984",
+   "state": "KERALA"
+  }
+ ]
+}

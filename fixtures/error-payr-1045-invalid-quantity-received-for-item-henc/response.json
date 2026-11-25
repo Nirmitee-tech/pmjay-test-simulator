@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "bc081b20-9253-4bfa-a0a1-c545493ccbeb",
+ "x-hcx-correlation_id": "bcc838d2-7787-4cba-815c-75578a1e661b",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794217240000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1045",
+  "message": "Invalid quantity received for item. Hence request will not be processed further. Please ensure value of quantity is a number, and not a decimal value. For example: valid quantity value should be 1, and 1.0 will be considered as invalid.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

@@ -1,0 +1,32 @@
+{
+ "scenario": "error-payr-1114-invalid-speciality-code-received-as-null",
+ "outcome": "error PAYR-1114",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "coverageeligibility/check",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "coverageeligibility/on_check",
+  "hcxStatus": "response.error",
+  "errorCode": "PAYR-1114",
+  "errorMessage": "Invalid speciality code received as null for item SB017A. Please try again with "
+ },
+ "ack": null,
+ "caseNumber": "NULL",
+ "correlationId": "8f5bcdea-d683-407a-aa19-9a189dd62e50",
+ "date": "2026-11-09",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 0,
+  "namesReplaced": 2,
+  "numbersReplaced": 1,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "ProtocolResponse error on coverageeligibility/on_check, case NULL."
+}

@@ -1,0 +1,36 @@
+{
+ "scenario": "dama-claim",
+ "outcome": "DAMA after surgery claim approved",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "claim/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.complete",
+  "errorCode": "100",
+  "errorMessage": "Message Submitted"
+ },
+ "ack": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.partial"
+ },
+ "caseNumber": "A/9019/26",
+ "correlationId": "993b7d82-bff4-4afb-bfe5-ac1c2caa6e07",
+ "date": "2026-11-20",
+ "files": [
+  "request.json",
+  "response-ack.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 16,
+  "namesReplaced": 3,
+  "numbersReplaced": 1,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "A/9019/26, 20 Nov."
+}

@@ -1,0 +1,32 @@
+{
+ "scenario": "error-payr-1245-enhancement-is-not-applicable-on-the-pre",
+ "outcome": "error PAYR-1245",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "preauth/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "preauth/on_submit",
+  "hcxStatus": "response.error",
+  "errorCode": "PAYR-1245",
+  "errorMessage": "Enhancement is not applicable on the previous approved packages. Hence enhanceme"
+ },
+ "ack": null,
+ "caseNumber": "A/9007/26",
+ "correlationId": "5ac92702-2111-4dd0-a744-97ead0d80ab3",
+ "date": "2026-11-10",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 1,
+  "namesReplaced": 2,
+  "numbersReplaced": 1,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "ProtocolResponse error on preauth/on_submit, case A/9007/26."
+}

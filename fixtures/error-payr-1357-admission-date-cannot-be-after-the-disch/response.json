@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "009152f9-00b6-4fb3-854c-c505a9c18c6a",
+ "x-hcx-correlation_id": "29978617-1988-4654-bc6f-bc5fd3b3d836",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794814838000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1357",
+  "message": "Admission date cannot be after the discharge date. Hence request will not be processed. Please correct the data and try again.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": null,
+ "x-hcx-ben-abha-id": null
+}

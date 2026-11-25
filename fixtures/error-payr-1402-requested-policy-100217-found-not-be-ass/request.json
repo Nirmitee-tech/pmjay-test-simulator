@@ -1,0 +1,153 @@
+{
+ "resourceType": "Bundle",
+ "id": "7fe178f3-ca94-4940-8425-8a6bc32fe948",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/TaskBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "39f29d7a-0c20-47b9-8cbe-e55e263558eb"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-12T10:55:21+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:fc8beee3-924e-4e62-9bf5-f4c2c65e31e2",
+   "resource": {
+    "resourceType": "Task",
+    "id": "fc8beee3-924e-4e62-9bf5-f4c2c65e31e2",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Task"
+     ]
+    },
+    "status": "requested",
+    "intent": "order",
+    "code": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/financialtaskcode",
+       "code": "poll"
+      }
+     ]
+    },
+    "description": "Fetch insurance plan for policy 100217",
+    "authoredOn": "2026-11-12T10:55:21+05:30",
+    "requester": {
+     "reference": "urn:uuid:ace86ad1-1832-4b8c-a596-c75ca6773229",
+     "display": "Organization"
+    },
+    "owner": {
+     "reference": "urn:uuid:eb4eba29-0048-4328-90b2-b9f70393521b",
+     "display": "Organization"
+    },
+    "input": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-task-input-type-code",
+         "code": "policyNumber",
+         "display": "PolicyNumber"
+        }
+       ]
+      },
+      "valueString": "100217"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-task-input-type-code",
+         "code": "providerId",
+         "display": "ProviderId"
+        }
+       ]
+      },
+      "valueString": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ace86ad1-1832-4b8c-a596-c75ca6773229",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "ace86ad1-1832-4b8c-a596-c75ca6773229",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:eb4eba29-0048-4328-90b2-b9f70393521b",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "eb4eba29-0048-4328-90b2-b9f70393521b",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "Payer",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  }
+ ]
+}

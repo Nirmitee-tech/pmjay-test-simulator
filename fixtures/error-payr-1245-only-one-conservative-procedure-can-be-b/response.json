@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "365d2f3d-b0ef-42c8-a1ea-d787ac808655",
+ "x-hcx-correlation_id": "7902276c-e502-4468-84a1-bbe98cf8f58f",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794803924000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1245",
+  "message": "Only one conservative procedure can be booked for a case, but received request for 2 conservative procedures.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": null,
+ "x-hcx-ben-abha-id": null
+}

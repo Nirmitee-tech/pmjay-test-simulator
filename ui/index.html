@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PMJAY Test Simulator</title>
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--line:#dfe3e8;--text:#1d2530;--muted:#5d6876;--accent:#1f5fbf;--danger:#b3261e;--warn:#8a5a00;--ok:#1e6b3a;--sel:#e8f0fc}
+@media (prefers-color-scheme:dark){:root{--bg:#12161b;--panel:#1a2027;--line:#2c343e;--text:#e4e8ed;--muted:#9aa5b1;--accent:#6ea2f0;--danger:#f08a82;--warn:#e0b25a;--ok:#7bcf98;--sel:#1f2b3b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+header h1{font-size:16px;margin:0 12px 0 0}
+label{color:var(--muted);font-size:13px}select,input,button{font:inherit;color:inherit}
+select,input[type=number],textarea{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:4px 6px}
+.faults{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);height:calc(100vh - 54px)}
+@media (max-width:800px){main{grid-template-columns:1fr;height:auto}}
+.list{overflow:auto;border-right:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{position:sticky;top:0;background:var(--panel);color:var(--muted);font-weight:500;font-size:13px}
+tr.row{cursor:pointer}tr.row:hover,tr.row.sel{background:var(--sel)}
+.tag{font-size:12px;padding:1px 6px;border-radius:3px;border:1px solid var(--line)}
+.t-error,.t-refused{color:var(--danger);border-color:var(--danger)}.t-pending,.t-query{color:var(--warn);border-color:var(--warn)}.t-complete{color:var(--ok);border-color:var(--ok)}
+.detail{overflow:auto;padding:16px}.detail h2{font-size:16px;margin:0 0 4px}.detail h3{font-size:14px;margin:18px 0 6px;color:var(--muted)}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:8px;max-height:340px;overflow:auto;font-size:12px}
+.empty{color:var(--muted);padding:24px}
+.desk{border:1px solid var(--warn);border-radius:6px;padding:12px;background:var(--panel)}
+.desk .row2{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+button{border:1px solid var(--line);background:var(--panel);border-radius:4px;padding:5px 12px;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}button.danger{color:var(--danger);border-color:var(--danger)}
+.err{color:var(--danger);font-size:13px}.muted{color:var(--muted);font-size:13px}
+
+.tabs{display:flex;gap:4px}.tabs button{border:0;border-bottom:2px solid transparent;border-radius:0;background:none;padding:6px 10px;color:var(--muted)}
+.tabs button[aria-selected=true]{color:var(--text);border-bottom-color:var(--accent);font-weight:600}
+body.pg .live{display:none!important}body:not(.pg) #pg{display:none}
+#pg{display:grid;grid-template-columns:minmax(280px,380px) minmax(0,1fr);height:calc(100vh - 54px)}
+@media (max-width:800px){#pg{grid-template-columns:1fr;height:auto}}
+#pg .pick{overflow:auto;border-right:1px solid var(--line);padding:12px 16px}
+#pg .out{overflow:auto;padding:12px 16px}
+#pg h2{font-size:14px;margin:14px 0 6px;color:var(--muted);font-weight:600}#pg h2:first-child{margin-top:0}
+.opt{display:block;padding:6px 8px;border:1px solid transparent;border-radius:4px;cursor:pointer}
+.opt:hover{background:var(--sel)}.opt.on{background:var(--sel);border-color:var(--accent)}
+.opt input{margin-right:6px}.opt .p{color:var(--muted);font-size:13px;margin-left:22px}
+.chip{display:inline-block;font-size:11px;padding:0 6px;border:1px solid var(--line);border-radius:10px;margin:2px 2px 0 0;color:var(--muted)}
+.grp{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 2px}
+.row3{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.lanes{display:grid;grid-template-columns:1fr 1fr 1fr;font-size:12px;color:var(--muted);text-align:center;margin:4px 0}
+.hop{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;margin:3px 0;font-size:13px}
+.arrow{grid-column:1/4;position:relative;border-top:2px solid var(--line);margin:10px 8%;}
+.arrow span{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--bg);padding:0 6px;white-space:nowrap}
+.arrow.right:after,.arrow.left:before{content:'';position:absolute;top:-6px;border:5px solid transparent}
+.arrow.right:after{right:-2px;border-left-color:var(--line)}.arrow.left:before{left:-2px;border-right-color:var(--line)}
+.step{border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:10px 12px;margin:0 0 12px}
+.step h3{margin:0 0 4px;font-size:15px;color:var(--text)}
+.res{font-weight:600}.res.ok{color:var(--ok)}.res.bad{color:var(--danger)}.res.wait{color:var(--warn)}
+.chk{display:grid;grid-template-columns:44px 90px minmax(0,1fr);gap:6px;font-size:13px;padding:3px 0;border-bottom:1px solid var(--line)}
+.chk .s{font-size:11px;color:var(--muted)}.pass{color:var(--ok)}.fail{color:var(--danger);font-weight:600}.note{color:var(--warn)}
+details{margin:6px 0}summary{cursor:pointer;color:var(--accent);font-size:13px}
+.src{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>PMJAY Test Simulator <small>1518@hcx</small></h1>
+  <nav class="tabs" role="tablist"><button role="tab" id="tabLive" aria-selected="true">Messages</button><button role="tab" id="tabPg" aria-selected="false">Playground</button></nav>
+  <label class="live">Scenario <select id="scenario"></select></label>
+  <div class="faults live" id="faults">
+    <label><input type="checkbox" data-f="http503"> Answer 503</label>
+    <label><input type="checkbox" data-f="noCallback"> No callback</label>
+    <label><input type="checkbox" data-f="duplicateCallback"> Duplicate callback</label>
+    <label><input type="checkbox" data-f="truncatedJwe"> Truncated JWE</label>
+    <label><input type="checkbox" data-f="http500"> Answer 500</label>
+    <label><input type="checkbox" data-f="noHealthyUpstream"> No healthy upstream</label>
+    <label><input type="checkbox" data-f="upstreamConnectError"> Upstream connect error</label>
+    <label><input type="checkbox" data-f="jwePayloadWrapper"> Wrapped callback</label>
+    <label><input type="checkbox" data-f="chunkedCallback"> Chunked callback</label>
+    <label><input type="checkbox" data-f="sessionRefuse"> Refuse login</label>
+    <label>Delay answer <input type="number" min="0" step="500" id="slow" style="width:80px"> ms</label>
+  </div>
+  <span id="status" class="muted live"></span>
+</header>
+<main class="live">
+  <section class="list"><table><thead><tr><th>Time</th><th>Action</th><th>Scenario</th><th>Outcome</th><th>Error</th></tr></thead><tbody id="rows"></tbody></table>
+    <div id="listEmpty" class="empty">No messages yet. Send a request from the HIMS.</div></section>
+  <section class="detail" id="detail"><div class="empty">Select a message to see the request, the checks and the answer.</div></section>
+</main>
+<section id="pg">
+  <div class="pick">
+    <h2>1. Scenario</h2><div id="pgScen"><div class="muted">Loading scenarios…</div></div>
+    <h2>2. Patient</h2><div id="pgPat"></div>
+    <div class="row3"><label>Package <select id="pgPkg"></select></label></div>
+    <div id="pgPkgInfo" class="src"></div>
+    <h2>Change before sending</h2>
+    <div class="row3"><select id="pgEdit"></select></div>
+    <div class="row3" id="pgField" hidden><input id="pgPath" placeholder="item.0.quantity.value" aria-label="Field path"><input id="pgVal" placeholder="value (empty removes it)" aria-label="Value"></div>
+  </div>
+  <div class="out">
+    <div class="bar"><button class="primary" id="pgSend" disabled>Send</button><button id="pgReset">Reset cases</button><span id="pgMsg" class="muted"></span></div>
+    <div id="pgOut"><div class="empty">Pick a scenario to see what will happen.</div></div>
+  </div>
+</section>
+
+<script>
+const $=s=>document.querySelector(s);let selected=null,lastJson='';
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function api(p,body){const r=await fetch(p,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error&&j.error.message||j.error||('HTTP '+r.status));return j}
+const tag=o=>o?`<span class="tag t-${esc(o)}">${esc(o)}</span>`:'';
+async function loadConfig(){const c=await api('/mock/config');const names=['auto','manual'].concat((c.scenarios||[]).map(s=>typeof s==='string'?s:s.id)).filter((v,i,a)=>a.indexOf(v)===i);
+  $('#scenario').innerHTML=names.map(n=>`<option ${n===c.scenario?'selected':''}>${esc(n)}</option>`).join('');
+  document.querySelectorAll('[data-f]').forEach(cb=>cb.checked=!!c.faults[cb.dataset.f]);$('#slow').value=c.faults.slowMs||0;
+  $('#status').textContent=c.himsCertLoaded?'Answers go to '+c.callbackBase:'No HIMS certificate yet: set PMJAY_HIMS_CERT or register one through participant/update. Answers cannot be encrypted until then.';}
+$('#scenario').onchange=e=>api('/mock/scenario',{scenario:e.target.value}).catch(x=>alert(x.message));
+document.querySelectorAll('[data-f]').forEach(cb=>cb.onchange=()=>api('/mock/fault',{[cb.dataset.f]:cb.checked}).catch(x=>{cb.checked=!cb.checked;alert(x.message)}));
+$('#slow').onchange=e=>api('/mock/fault',{slow:Number(e.target.value)||0});
+async function loadList(){try{const list=await api('/mock/messages');const j=JSON.stringify(list);$('#status').classList.remove('err');
+  if(j!==lastJson){lastJson=j;$('#listEmpty').style.display=list.length?'none':'';
+  $('#rows').innerHTML=list.map(m=>`<tr class="row ${m.id==selected?'sel':''}" data-id="${m.id}"><td>${new Date(m.at).toLocaleTimeString()}</td><td>${esc(m.action)}</td><td>${esc(m.scenario)}</td><td>${tag(m.outcome)}</td><td>${esc(m.errorCode)}</td></tr>`).join('');
+  document.querySelectorAll('tr.row').forEach(tr=>tr.onclick=()=>show(tr.dataset.id));if(selected)show(selected,true);}}
+  catch(e){$('#status').textContent='Cannot reach the server. Retrying.';$('#status').classList.add('err')}}
+async function show(id,quiet){selected=id;document.querySelectorAll('tr.row').forEach(tr=>tr.classList.toggle('sel',tr.dataset.id==id));
+  let m;try{m=await api('/mock/messages/'+id)}catch(e){$('#detail').innerHTML=`<p class="err">Could not load message ${esc(id)}: ${esc(e.message)}</p>`;return}
+  if(quiet&&document.activeElement&&$('#detail').contains(document.activeElement))return;
+  const f=m.findings||[];const resp=m.responses||[];
+  $('#detail').innerHTML=`<h2>${esc(m.action)} ${tag(m.outcome)}</h2>
+  <div class="muted">Correlation ${esc(m.correlationId)} · workflow ${esc(m.workflowId)} · ${esc(m.sender)} to ${esc(m.recipient)} · ${new Date(m.at).toLocaleString()}</div>
+  ${m.error?`<p class="err">${esc(m.errorCode)} ${esc(m.error)}</p>`:''}${m.engineError?`<p class="err">${esc(m.engineError)}</p>`:''}
+  ${m.pending?`<div class="desk"><strong>Waiting for a decision</strong><div class="row2">
+   <label>Approved amount <input type="number" id="amt" min="0"></label></div>
+   <textarea id="note" rows="2" style="width:100%" placeholder="Remarks sent with the decision"></textarea>
+   <div class="row2"><button class="primary" data-d="approve">Approve</button><button data-d="partial">Approve part</button><button data-d="query">Raise query</button><button class="danger" data-d="reject">Reject</button></div><div id="deskErr" class="err"></div></div>`:''}
+  <h3>Checks (${f.length})</h3>${f.length?`<pre>${esc(JSON.stringify(f,null,2))}</pre>`:'<div class="muted">No findings.</div>'}
+  <h3>Request bundle</h3><pre>${esc(JSON.stringify(m.requestBundle||null,null,2))}</pre>
+  <h3>Answer</h3>${resp.length?resp.map(r=>`<div class="muted">${esc(r.action)} at ${new Date(r.at).toLocaleTimeString()}: ${(r.deliveries||[]).map(d=>d.status?('HTTP '+d.status):esc(d.error)).join(', ')}${r.truncated?' (truncated on purpose)':''}</div><pre>${esc(JSON.stringify(r.bundle||r.header,null,2))}</pre>`).join(''):`<div class="muted">${m.pending?'Not sent yet.':'None sent.'}</div>`}`;
+  document.querySelectorAll('[data-d]').forEach(b=>b.onclick=async()=>{b.disabled=true;try{await api('/mock/desk/'+id,{decision:b.dataset.d,amount:$('#amt').value||undefined,note:$('#note').value||undefined});lastJson='';loadList()}catch(e){$('#deskErr').textContent=e.message;b.disabled=false}});}
+loadConfig().catch(()=>{});loadList();setInterval(loadList,2000);
+</script>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s);const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money=n=>n==null?'':'₹'+Number(n).toLocaleString('en-IN');
+let cat=null,sel={scenario:null,patient:'SBXSTG269',package:'',edit:''},seq=0;
+async function call(p,b){const r=await fetch(p,b!==undefined?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}:{});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error&&j.error.message||('HTTP '+r.status));return j}
+function tab(pg){document.body.classList.toggle('pg',pg);$('#tabPg').setAttribute('aria-selected',pg);$('#tabLive').setAttribute('aria-selected',!pg);try{localStorage.setItem('pmjayTab',pg?'pg':'live')}catch(_){};if(pg&&!cat)load()}
+$('#tabPg').onclick=()=>tab(true);$('#tabLive').onclick=()=>tab(false);
+async function load(){try{cat=await call('/playground/catalogue')}catch(e){$('#pgScen').innerHTML=`<p class="err">Could not load scenarios: ${esc(e.message)}. <button id="pgRetry">Try again</button></p>`;$('#pgRetry').onclick=load;return}
+  const item=s=>`<label class="opt" data-id="${esc(s.id)}"><input type="radio" name="pgS" value="${esc(s.id)}">${esc(s.label)}<div class="p">${esc(s.plain)}</div><div class="p">${s.calls.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div></label>`;
+  $('#pgScen').innerHTML='<div class="grp">Flows</div>'+cat.scenarios.filter(s=>s.kind==='flow').map(item).join('')+'<div class="grp">Real refusals from 1518</div>'+cat.scenarios.filter(s=>s.kind==='error').map(item).join('');
+  $('#pgPat').innerHTML=cat.patients.map(p=>`<label class="opt"><input type="radio" name="pgP" value="${esc(p.id)}" ${p.id===sel.patient?'checked':''}>${esc(p.id)}<div class="p">${esc(p.label)}${p.wallet!=null?' · wallet '+money(p.wallet):''} · policy ${esc(p.policies.join(', '))}</div></label>`).join('');
+  $('#pgEdit').innerHTML='<option value="">No change</option>'+cat.edits.map(e=>`<option value="${esc(e.id)}">${esc(e.label)}${e.watch?' ('+esc(e.watch)+')':''}</option>`).join('');
+  document.querySelectorAll('[name=pgS]').forEach(r=>r.onchange=()=>{sel.scenario=r.value;sel.package='';sel.edit='';$('#pgEdit').value='';$('#pgField').hidden=true;document.querySelectorAll('#pgScen .opt').forEach(o=>o.classList.toggle('on',o.dataset.id===r.value));pkgs();preview()});
+  document.querySelectorAll('[name=pgP]').forEach(r=>r.onchange=()=>{sel.patient=r.value;preview()});
+}
+function scen(){return cat&&cat.scenarios.find(s=>s.id===sel.scenario)}
+function pkgs(){const s=scen();if(!s)return;const inReq=s.packages.filter(p=>!/^IMP/.test(p.code));
+  const others=cat.packages.filter(p=>!inReq.some(q=>q.code===p.code));
+  $('#pgPkg').innerHTML=`<option value="">As in the real request${inReq.length?' ('+esc(inReq.map(p=>p.code).join(', '))+')':''}</option>`+others.map(p=>`<option value="${esc(p.code)}">${esc(p.code)} ${esc(p.name.slice(0,40))}</option>`).join('');
+  $('#pgPkg').disabled=!inReq.length;showPkg()}
+function showPkg(){const s=scen();const list=sel.package?cat.packages.filter(p=>p.code===sel.package):(s?s.packages:[]);
+  $('#pgPkgInfo').innerHTML=list.map(p=>`<div><b>${esc(p.code)}</b> ${esc(p.name)} · ${p.amount!=null?money(p.amount):'no price'}${p.rates&&p.rates.length?' · room '+p.rates.map(r=>esc(r.display)+' '+money(r.amount)).join(', '):''}${p.implantNeeded?' · needs implant':''}${p.roomLevelNeeded?' · needs room level':''}${p.topUpAllowed===false?' · no top-up':''}${p.noReview?' · approved without review':''}</div>`).join('')}
+$('#pgPkg').onchange=e=>{sel.package=e.target.value;showPkg();preview()};
+$('#pgEdit').onchange=e=>{sel.edit=e.target.value;$('#pgField').hidden=sel.edit!=='field';preview()};
+let t;[$('#pgPath'),$('#pgVal')].forEach(i=>i.oninput=()=>{clearTimeout(t);t=setTimeout(preview,400)});
+function body(){return{scenario:sel.scenario,patient:sel.patient,package:sel.package||undefined,edit:sel.edit?{id:sel.edit,path:$('#pgPath').value,value:$('#pgVal').value}:undefined}}
+const cls=o=>/^(Approved|Covered|Cancelled|Answered|Payment notice|Done)/.test(o)?'ok':/^(Queued|Queried)/.test(o)?'wait':'bad';
+function badge(st){return st.real?`<span class="tag t-complete">Real · 1518 message ${esc(st.realAnswer&&st.realAnswer.id)}</span>`:`<span class="tag t-pending">Predicted</span>`}
+function hops(st,full){const a=st.answers.filter(x=>full||x.action!=='paymentnotice/request'||true);
+  return `<div class="lanes"><div>Hospital</div><div>NHCX</div><div>1518</div></div>
+  <div class="hop"><div class="arrow right"><span>${esc(st.call)} · request ${esc(st.requestId||'')}</span></div></div>
+  ${a.map(x=>`<div class="hop"><div class="arrow left"><span class="res ${cls(x.outcome)}">${esc(x.outcome)}</span> <span class="src">${esc(x.hcxStatus)}</span></div></div>`).join('')}`}
+function checks(st,full){const f=st.checks.filter(c=>full||true);if(!f.length)return '<div class="muted">No rules for this call.</div>';
+  return f.map(c=>`<div class="chk"><div class="${c.result==='pass'?'pass':c.result==='fail'?'fail':'note'}">${c.result==='pass'?'Pass':c.result==='fail'?'Fail':'Note'}</div><div>${esc(c.code)}</div><div>${esc(c.id)}${c.seen?'':' <span class="s">(1518 not seen doing this on this call)</span>'}${c.message&&full?`<div>${esc(c.message)}</div>`:''}${full?`<div class="s">${esc(c.source)}</div>`:''}</div></div>`).join('')}
+function caseTable(st){const cs=st.cases;return `<h3>Cases after</h3>`+(cs.length?`<table><thead><tr><th>Case</th><th>Member</th><th>Stay</th><th>Pre-auth</th><th>Approved</th><th>Claim</th><th>Waiting</th><th>Notices</th></tr></thead><tbody>${cs.map(c=>`<tr><td>${esc(c.number.split('/').pop())}</td><td>${esc(c.member)}</td><td>${esc(c.admission)}</td><td>${esc(c.status)}</td><td>${money(c.approved)}</td><td>${esc(c.claim&&c.claim.status||'none')}${c.claim&&c.claim.approved?' '+money(c.claim.approved):''}</td><td>${esc(c.waiting||'no')}</td><td>${c.paymentNotices}</td></tr>`).join('')}</tbody></table>`:'<div class="muted">No cases.</div>')+
+  `<div class="muted" style="margin-top:6px">${st.wallets.map(w=>`Wallet ${esc(w.member)}: ${money(w.left)} of ${money(w.start)}`).join(' · ')}</div>`}
+function header(r,sent){const s=scen();return `<h2 style="margin:0">${sent?'Sent':'3. What will happen'}: ${esc(s.label)} for ${esc(r.patient)}</h2>${s.note?`<p class="muted">${esc(s.note)}</p>`:''}`}
+async function preview(){const s=scen();if(!s)return;const my=++seq;$('#pgSend').disabled=true;$('#pgMsg').textContent='Checking…';
+  let r;try{r=await call('/playground/preview',body())}catch(e){if(my!==seq)return;$('#pgMsg').textContent='';$('#pgOut').innerHTML=`<p class="err">${esc(e.message)}</p>`;return}
+  if(my!==seq)return;$('#pgMsg').textContent='';$('#pgSend').disabled=false;
+  $('#pgOut').innerHTML=header(r,false)+r.steps.map(st=>`<div class="step"><h3>${st.n}. ${esc(st.call)} <span class="res ${cls(st.outcome)}">${esc(st.outcome)}</span> ${badge(st)}</h3>
+   ${!st.matches?`<p class="err">The catalogue expects ${esc(st.expect)}.</p>`:''}${st.realAnswer&&st.realAnswer.code&&st.realAnswer.code!==st.outcome?`<p class="muted">1518 answered ${esc(st.realAnswer.code)} to the real request.</p>`:''}
+   ${st.changes.length?`<div class="src">${st.changes.map(esc).join(' ')}</div>`:''}${hops(st)}
+   <details><summary>Rules checked (${st.checks.length})</summary>${checks(st,false)}</details></div>`).join('');}
+$('#pgSend').onclick=async()=>{const s=scen();if(!s)return;$('#pgSend').disabled=true;$('#pgMsg').textContent='Sending…';
+  try{const r=await call('/playground/run',body());$('#pgMsg').textContent='Sent '+new Date().toLocaleTimeString();
+   $('#pgOut').innerHTML=header(r,true)+r.steps.map(st=>`<div class="step"><h3>${st.n}. ${esc(st.call)} <span class="res ${cls(st.outcome)}">${esc(st.outcome)}</span> ${badge(st)}</h3>
+    ${st.changes.length?`<div class="src">${st.changes.map(esc).join(' ')}</div>`:''}
+    <details><summary>Request bundle (from real request ${esc(st.requestId||st.fixture)})</summary><pre>${esc(JSON.stringify(st.request,null,2))}</pre></details>
+    <h3 style="font-size:13px;color:var(--muted);margin:8px 0 2px">Rules</h3>${checks(st,true)}
+    ${hops(st)}${st.answers.map((a,i)=>`<details><summary>Answer ${i+1}: ${esc(a.action)} · ${esc(a.outcome)}${a.error?' · '+esc(a.error.message):''}</summary><pre>${esc(JSON.stringify(a.bundle,null,2))}</pre></details>`).join('')}</div>`).join('')+caseTable(r.state);
+  }catch(e){$('#pgMsg').textContent='';$('#pgOut').insertAdjacentHTML('afterbegin',`<p class="err">Not sent: ${esc(e.message)}</p>`)}
+  $('#pgSend').disabled=false};
+$('#pgReset').onclick=async()=>{try{const st=await call('/playground/reset',{});$('#pgMsg').textContent='Cases cleared.';if(scen())preview();else $('#pgOut').innerHTML=caseTable(st)}catch(e){$('#pgMsg').textContent='Could not clear: '+e.message}};
+let saved=null;try{saved=localStorage.getItem('pmjayTab')}catch(_){}if(saved==='pg'||location.hash==='#playground')tab(true);
+})();
+</script>
+</body></html>

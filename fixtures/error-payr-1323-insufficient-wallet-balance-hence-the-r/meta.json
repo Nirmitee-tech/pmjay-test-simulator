@@ -1,0 +1,32 @@
+{
+ "scenario": "error-payr-1323-insufficient-wallet-balance-hence-the-r",
+ "outcome": "error PAYR-1323",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "claim/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.error",
+  "errorCode": "PAYR-1323",
+  "errorMessage": "Insufficient wallet balance. Hence the request will not be processed."
+ },
+ "ack": null,
+ "caseNumber": "A/9015/26",
+ "correlationId": "bb040c36-3c29-4548-803f-cbaa6464d996",
+ "date": "2026-11-18",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 19,
+  "namesReplaced": 2,
+  "numbersReplaced": 2,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "ProtocolResponse error on claim/on_submit, case A/9015/26."
+}

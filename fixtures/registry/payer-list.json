@@ -1,0 +1,1216 @@
+{
+ "participantdetails": [
+  {
+   "participantcode": "1000004255@hcx",
+   "participantname": "5ecare",
+   "address": null,
+   "state": "KARNATAKA"
+  },
+  {
+   "participantcode": "1000004888@hcx",
+   "participantname": "5ecare",
+   "address": null,
+   "state": "KARNATAKA"
+  },
+  {
+   "participantcode": "1000004816@hcx",
+   "participantname": "ABYM Payer",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000003362@hcx",
+   "participantname": "ACKO General Insurance",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "7999@hcx",
+   "participantname": "Acko General Insurance Ltd.",
+   "address": "2nd Floor, #36/5, Hustlehub One East, Somasandrapalya, 27th Main road, Sector 2, HSR Layout, Bengaluru, Karnataka - 560102",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "79990@hcx",
+   "participantname": "Acko General Insurance Ltd.",
+   "address": "2nd Floor, #36/5, Hustlehub One East, Somasandrapalya, 27th Main road, Sector 2, HSR Layout, Bengaluru, Karnataka - 560102",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "79999@hcx",
+   "participantname": "Acko General Insurance Ltd.",
+   "address": "2nd Floor, #36/5, Hustlehub One East, Somasandrapalya, 27th Main road, Sector 2, HSR Layout, Bengaluru, Karnataka - 560102",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "PYR153@hcx",
+   "participantname": "Aditya Birla Health Insurance Co. Ltd.",
+   "address": "One World Centre, Tower 1, Jupiter Mills Compound, 841, S B Marg, Elphinstone Road, Mumbai - 400013",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "1000003315@hcx",
+   "participantname": "Aditya Birla Health Insurance Company LTD",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000006295@hcx",
+   "participantname": "Aditya Birla Health Insurance Company LTD",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000004556@hcx",
+   "participantname": "AFQ Test Facility",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000003610@hcx",
+   "participantname": "Akna Health Insurance TPA Pvt. Ltd",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004253@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004188@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004189@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004191@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004192@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004193@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004194@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004195@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004254@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004258@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004259@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004260@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004261@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004262@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004263@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004264@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004265@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004268@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004270@hcx",
+   "participantname": "AYUSH",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000003320@hcx",
+   "participantname": "Bajaj Allianz General Insurance",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000003534@hcx",
+   "participantname": "Bhavi",
+   "address": null,
+   "state": ""
+  },
+  {
+   "participantcode": "1000004819@hcx",
+   "participantname": "Binix Test payer",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000004161@hcx",
+   "participantname": "C4GTPayer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003532@hcx",
+   "participantname": "Chikitsa Insurance Pvt Ltd",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000002090@hcx",
+   "participantname": "Chola MS General Insurance Company LTD",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004134@hcx",
+   "participantname": "Chola MS General Insurance Company LTD",
+   "address": null,
+   "state": "Tamil Nadu"
+  },
+  {
+   "participantcode": "1000004135@hcx",
+   "participantname": "Chola MS General Insurance Company LTD",
+   "address": null,
+   "state": "Tamil Nadu"
+  },
+  {
+   "participantcode": "1000004136@hcx",
+   "participantname": "Chola MS General Insurance Company LTD",
+   "address": null,
+   "state": "Tamil Nadu"
+  },
+  {
+   "participantcode": "1000004956@hcx",
+   "participantname": "CityCare Test Payer",
+   "address": null,
+   "state": "Assam"
+  },
+  {
+   "participantcode": "1000003607@hcx",
+   "participantname": "Claim diary system ",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000003608@hcx",
+   "participantname": "Claimdiary system",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004952@hcx",
+   "participantname": "Cortexa Technology NHCX Payer",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004953@hcx",
+   "participantname": "Cortexa Technology NHCX Payer",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004903@hcx",
+   "participantname": "CT TPA Criterion",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000004939@hcx",
+   "participantname": "Demo mediquity payer",
+   "address": null,
+   "state": "MP"
+  },
+  {
+   "participantcode": "1000004940@hcx",
+   "participantname": "Demo Mediquity Payer1",
+   "address": null,
+   "state": "MP"
+  },
+  {
+   "participantcode": "1000003537@hcx",
+   "participantname": "Dhruvik Test Payer",
+   "address": null,
+   "state": "Gujarat"
+  },
+  {
+   "participantcode": "1000004301@hcx",
+   "participantname": "Duck creek",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004386@hcx",
+   "participantname": "Duck creek",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004133@hcx",
+   "participantname": "Duckcreek_Payer_1",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000005030@hcx",
+   "participantname": "E2E Test payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000005063@hcx",
+   "participantname": "Era CT Test",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000005041@hcx",
+   "participantname": "Final Insurer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000005047@hcx",
+   "participantname": "Final Insurer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000005044@hcx",
+   "participantname": "Final Insurer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004520@hcx",
+   "participantname": "Galaxy Health Insurance Co Ltd",
+   "address": null,
+   "state": "Tamil Nadu"
+  },
+  {
+   "participantcode": "1000004817@hcx",
+   "participantname": "Gaurav Insurance company",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000003332@hcx",
+   "participantname": "GoDigit General Insurance Ltd.",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "1000003758@hcx",
+   "participantname": "GoDigit General Insurance Ltd.",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "1000004160@hcx",
+   "participantname": "Godrej Life",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003352@hcx",
+   "participantname": "Good Health Insurance TPA",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000003525@hcx",
+   "participantname": "Gujarat Payer",
+   "address": null,
+   "state": ""
+  },
+  {
+   "participantcode": "1000004866@hcx",
+   "participantname": "Haider Ali Hospital and Research Center",
+   "address": null,
+   "state": "Uttarakhand"
+  },
+  {
+   "participantcode": "1000004549@hcx",
+   "participantname": "Harish Test Payer Node",
+   "address": null,
+   "state": "tamil nadu"
+  },
+  {
+   "participantcode": "1000003319@hcx",
+   "participantname": "HDFC ERGO GENERAL INSURANCE",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004574@hcx",
+   "participantname": "HEALTHATTAI",
+   "address": null,
+   "state": "Tamil Nadu"
+  },
+  {
+   "participantcode": "1000003463@hcx",
+   "participantname": "Healthica",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000004221@hcx",
+   "participantname": "Healthica Payer",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000004910@hcx",
+   "participantname": "hf01",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003353@hcx",
+   "participantname": "HITPA",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004801@hcx",
+   "participantname": "Hunnarvi Technologies Pvt Ltd",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "1000003324@hcx",
+   "participantname": "ICICI LOMBARD GENERAL INSURANCE",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003328@hcx",
+   "participantname": "IFFCO TOKIO General Insurance",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004464@hcx",
+   "participantname": "IITM-Plenome",
+   "address": null,
+   "state": "TamilNadu"
+  },
+  {
+   "participantcode": "1000004971@hcx",
+   "participantname": "IS-TEST-PAYER",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004869@hcx",
+   "participantname": "Jalal Agencies",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000003405@hcx",
+   "participantname": "Kurla",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004758@hcx",
+   "participantname": "Kyro",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004445@hcx",
+   "participantname": "Kyro Payer",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000004805@hcx",
+   "participantname": "Kyro Payer",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000004926@hcx",
+   "participantname": "Kyro Payer 2",
+   "address": null,
+   "state": "Arunachal Pradesh"
+  },
+  {
+   "participantcode": "1000004813@hcx",
+   "participantname": "Kyro Provider",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000003416@hcx",
+   "participantname": "Liberty General Insurance",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000003316@hcx",
+   "participantname": "Link-K Insurance TPA Pvt. Ltd",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004820@hcx",
+   "participantname": "Lpl insurance corp",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000003338@hcx",
+   "participantname": "ManipalCigna Health Insurance Company Limited",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000003519@hcx",
+   "participantname": "Marcus Multispeciality MMZ",
+   "address": null,
+   "state": "Kolkata"
+  },
+  {
+   "participantcode": "1000003308@hcx",
+   "participantname": "Medi Assist",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004566@hcx",
+   "participantname": "Mediprobe",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004551@hcx",
+   "participantname": "MediProbe Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004565@hcx",
+   "participantname": "MediProbe Payer",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004729@hcx",
+   "participantname": "Medulia Hospital",
+   "address": null,
+   "state": "h"
+  },
+  {
+   "participantcode": "1000004861@hcx",
+   "participantname": "MedVantage Health Services Pvt Ltd",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000004865@hcx",
+   "participantname": "Motilal Oswal Private Limited",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "1000004715@hcx",
+   "participantname": "Narayana Health Insurance Limited",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "1000004871@hcx",
+   "participantname": "National Hospital Indore",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "PYR58@hcx",
+   "participantname": "National Insurance Co. Ltd.",
+   "address": "Premises No.18-0374, Plot No.CBD-81, New Town, Kolkata-700 156 (effective from 09/08/2023)",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "1000004403@hcx",
+   "participantname": "NHA Test Payer",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000004826@hcx",
+   "participantname": "NHCX Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003529@hcx",
+   "participantname": "Niva Bupa Health Insurance Pvt ltd",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004479@hcx",
+   "participantname": "Payer - Test Client",
+   "address": null,
+   "state": "TELANGANA"
+  },
+  {
+   "participantcode": "1000004601@hcx",
+   "participantname": "Payer - Test Client",
+   "address": null,
+   "state": "TELANGANA"
+  },
+  {
+   "participantcode": "1000004616@hcx",
+   "participantname": "Payer - Test Clientt",
+   "address": null,
+   "state": "TELANGANA"
+  },
+  {
+   "participantcode": "1000004602@hcx",
+   "participantname": "Payer - Test1 Client",
+   "address": null,
+   "state": "TELANGANA"
+  },
+  {
+   "participantcode": "1000004603@hcx",
+   "participantname": "Payer - Test1 Client",
+   "address": null,
+   "state": "TELANGANA"
+  },
+  {
+   "participantcode": "1000004912@hcx",
+   "participantname": "payer1",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003313@hcx",
+   "participantname": "Payvider",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000005070@hcx",
+   "participantname": "Phase6 Insurer 6AD7B753",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "12345678932@hcx",
+   "participantname": "PMJAY Hospitals",
+   "address": "hyderabad",
+   "state": "36"
+  },
+  {
+   "participantcode": "1000004477@hcx",
+   "participantname": "PTPL Payer",
+   "address": null,
+   "state": "TamilNadu"
+  },
+  {
+   "participantcode": "1000004478@hcx",
+   "participantname": "PTPL Payer",
+   "address": null,
+   "state": "TamilNadu"
+  },
+  {
+   "participantcode": "1000004878@hcx",
+   "participantname": "Punjab Hospital",
+   "address": null,
+   "state": "Punjab"
+  },
+  {
+   "participantcode": "1000003606@hcx",
+   "participantname": "RAHEJA QBE PVT LTD",
+   "address": null,
+   "state": "MAHARASHTRA"
+  },
+  {
+   "participantcode": "1000004388@hcx",
+   "participantname": "Rashaa Payer",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000003339@hcx",
+   "participantname": "Reliance General Insurance",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000004280@hcx",
+   "participantname": "RSHAA Test Payer",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000002093@hcx",
+   "participantname": "Safeway Insurance TPA Pvt Ltd",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004957@hcx",
+   "participantname": "Sandbox Payer",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004958@hcx",
+   "participantname": "Sandbox PMJAY Payer",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004364@hcx",
+   "participantname": "SBIG",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000004124@hcx",
+   "participantname": "Shriram General Insurance",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000004991@hcx",
+   "participantname": "smartData",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004989@hcx",
+   "participantname": "Star Health",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000003327@hcx",
+   "participantname": "Star Health Insurance",
+   "address": null,
+   "state": "Tamil Nadu"
+  },
+  {
+   "participantcode": "1000004859@hcx",
+   "participantname": "Sunrise Multispeciality Hospital",
+   "address": null,
+   "state": "Uttar Pradesh"
+  },
+  {
+   "participantcode": "PYR308@hcx",
+   "participantname": "TATA AIG General Insurance Co. Ltd.",
+   "address": "Peninsula Business Park, Tower A, 15th Floor, G.K. Marg, Lower Parel, Mumbai \u2013 400013",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "PYR3088@hcx",
+   "participantname": "TATA AIG General Insurance Co. Ltd.",
+   "address": "Peninsula Business Park, Tower A, 15th Floor, G.K. Marg, Lower Parel, Mumbai \u2013 400013",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "PYR30888@hcx",
+   "participantname": "TATA AIG General Insurance Co. Ltd.",
+   "address": "Peninsula Business Park, Tower A, 15th Floor, G.K. Marg, Lower Parel, Mumbai \u2013 400013",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "PYR308889@hcx",
+   "participantname": "TATA AIG General Insurance Co. Ltd.",
+   "address": "Peninsula Business Park, Tower A, 15th Floor, G.K. Marg, Lower Parel, Mumbai \u2013 400013",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "PYR1234@hcx",
+   "participantname": "TATA AIG General Insurance Co. Ltd.",
+   "address": "Peninsula Business Park, Tower A, 15th Floor, G.K. Marg, Lower Parel, Mumbai \u2013 400013",
+   "state": "Telangana"
+  },
+  {
+   "participantcode": "1000003329@hcx",
+   "participantname": "Test Insurance",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "1000004930@hcx",
+   "participantname": "Test Insurer A",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004943@hcx",
+   "participantname": "Test Insurer B",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "nhcx-gateway@hcx",
+   "participantname": "Test Notification Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003340@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000003526@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003989@hcx",
+   "participantname": "Test Payer",
+   "address": "\"123 Main street, VIKROLI, Mumbai, 500123\"",
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000004391@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004542@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004670@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004671@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004672@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004673@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004674@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004676@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004677@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004680@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004681@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004683@hcx",
+   "participantname": "Test Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004735@hcx",
+   "participantname": "Test Payer 1",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004695@hcx",
+   "participantname": "Test Payer 1",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004694@hcx",
+   "participantname": "Test Payer 10",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004702@hcx",
+   "participantname": "Test Payer 12",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004696@hcx",
+   "participantname": "Test Payer 18",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004719@hcx",
+   "participantname": "Test Payer 22",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004725@hcx",
+   "participantname": "Test Payer 24",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004687@hcx",
+   "participantname": "Test Payer 3",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004731@hcx",
+   "participantname": "Test Payer 59",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004732@hcx",
+   "participantname": "Test Payer 61",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004743@hcx",
+   "participantname": "Test Payer 65",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004770@hcx",
+   "participantname": "Test Payer 77",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004692@hcx",
+   "participantname": "Test Payer 8",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003336@hcx",
+   "participantname": "Test Payer Chikitsa",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000005015@hcx",
+   "participantname": "Test Payer New",
+   "address": null,
+   "state": "Bihar"
+  },
+  {
+   "participantcode": "1000004304@hcx",
+   "participantname": "Test provider2",
+   "address": null,
+   "state": "madhya pradesh"
+  },
+  {
+   "participantcode": "1000004303@hcx",
+   "participantname": "Testing Healthica",
+   "address": null,
+   "state": "West Bengal"
+  },
+  {
+   "participantcode": "1000003321@hcx",
+   "participantname": "TestNameChanged",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000004760@hcx",
+   "participantname": "TestNameChanged",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004761@hcx",
+   "participantname": "TestNameChanged",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004756@hcx",
+   "participantname": "TestNameChanged",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004775@hcx",
+   "participantname": "TestNameChanged234",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004779@hcx",
+   "participantname": "TestNameChanged234",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004765@hcx",
+   "participantname": "TestNameChanged234",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003518@hcx",
+   "participantname": "The New India Assurance Co. Ltd",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004978@hcx",
+   "participantname": "Throwaway payer 1791217105329",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004980@hcx",
+   "participantname": "Throwaway payer 1791218377905",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004982@hcx",
+   "participantname": "Throwaway payer 1791219059001",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004984@hcx",
+   "participantname": "Throwaway payer 1791219169572",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004986@hcx",
+   "participantname": "Throwaway payer 1791219525133",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004988@hcx",
+   "participantname": "Throwaway payer 1791220541540",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000005163@hcx",
+   "participantname": "Tishha Demo Payer",
+   "address": null,
+   "state": "Karnataka"
+  },
+  {
+   "participantcode": "1000003430@hcx",
+   "participantname": "Track Four Infotec",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000005035@hcx",
+   "participantname": "UI Insurer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003544@hcx",
+   "participantname": "UIIC",
+   "address": null,
+   "state": "Tamilnadu"
+  },
+  {
+   "participantcode": "1000003292@hcx",
+   "participantname": "ujwal hospital",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003312@hcx",
+   "participantname": "Universal Sompo General Insurance",
+   "address": null,
+   "state": "Maharshatra"
+  },
+  {
+   "participantcode": "1000003594@hcx",
+   "participantname": "vesak technologies",
+   "address": null,
+   "state": "telegana"
+  },
+  {
+   "participantcode": "1000003503@hcx",
+   "participantname": "vesak technologies",
+   "address": null,
+   "state": "telegana"
+  },
+  {
+   "participantcode": "1000003354@hcx",
+   "participantname": "Vitraya Technologies",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000005038@hcx",
+   "participantname": "Vk Multispeciality",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000003311@hcx",
+   "participantname": "VOLO Health TPA Pvt. Ltd.",
+   "address": null,
+   "state": "Delhi"
+  },
+  {
+   "participantcode": "1000004530@hcx",
+   "participantname": "XYZ Hospital",
+   "address": null,
+   "state": "Maharashtra"
+  },
+  {
+   "participantcode": "1000005113@hcx",
+   "participantname": "YEP Test Health Insurance",
+   "address": null,
+   "state": "Rajasthan"
+  },
+  {
+   "participantcode": "1000004159@hcx",
+   "participantname": "Zealthix Insurance ",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004150@hcx",
+   "participantname": "Zealthix Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004152@hcx",
+   "participantname": "Zealthix Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004153@hcx",
+   "participantname": "Zealthix Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004157@hcx",
+   "participantname": "Zealthix Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004499@hcx",
+   "participantname": "Zealthix Payer",
+   "address": null,
+   "state": "Haryana"
+  },
+  {
+   "participantcode": "1000004156@hcx",
+   "participantname": "Zealthix Payer1",
+   "address": null,
+   "state": "Haryana"
+  }
+ ]
+}

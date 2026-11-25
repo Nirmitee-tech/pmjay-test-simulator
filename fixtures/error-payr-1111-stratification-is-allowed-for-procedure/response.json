@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "38f23cd7-6194-461f-84c7-651476f81aec",
+ "x-hcx-correlation_id": "12c8946a-8168-4a90-be1b-4c532ff4c79c",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794792272000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1111",
+  "message": "Stratification is allowed for procedure SN063D. But no stratification received.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

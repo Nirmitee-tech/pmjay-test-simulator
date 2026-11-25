@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "3fab2ee6-d190-4c0d-b8ac-b57b363b098e",
+ "x-hcx-correlation_id": "5ac92702-2111-4dd0-a744-97ead0d80ab3",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794278781000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1245",
+  "message": "Enhancement is not applicable on the previous approved packages. Hence enhancement request will not be accepted.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": null,
+ "x-hcx-ben-abha-id": null
+}

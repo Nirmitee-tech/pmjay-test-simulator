@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "a7c19a7a-3e73-4a3a-ab7c-028841d39f38",
+ "x-hcx-correlation_id": "39454d1b-a944-4236-b38a-bf3f56dae76b",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794994246000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1238",
+  "message": "Beneficiary is having an active preauthorization request at this hospital with reference number PMJAY/HP/S/2024/R2/2026111890000009. Hence the request will not be processed. Kindly cancel the active preauthorization request or raise a claim to proceed with current preauthorization.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": null,
+ "x-hcx-ben-abha-id": null
+}

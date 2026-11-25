@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "49dd47fc-272b-4f8c-884b-049b2198bf61",
+ "x-hcx-correlation_id": "b11394ba-fa58-4640-ac7c-72d23807ab13",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794791495000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "HBP0006",
+  "message": "No data configured for the given payer.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

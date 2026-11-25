@@ -1,0 +1,32 @@
+{
+ "scenario": "error-payr-1263-documents-are-mandatory-for-the-new-born",
+ "outcome": "error PAYR-1263",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "preauth/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "preauth/on_submit",
+  "hcxStatus": "response.error",
+  "errorCode": "PAYR-1263",
+  "errorMessage": "Documents are mandatory for the new born beneficiary"
+ },
+ "ack": null,
+ "caseNumber": "A/9020/26",
+ "correlationId": "3bc44684-79de-47bc-b43c-851436cf2594",
+ "date": "2026-11-20",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 6,
+  "namesReplaced": 3,
+  "numbersReplaced": 1,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "ProtocolResponse error on preauth/on_submit, case A/9020/26."
+}

@@ -1,0 +1,32 @@
+{
+ "scenario": "error-payr-1402-requested-policy-100217-found-not-be-ass",
+ "outcome": "error PAYR-1402",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "insuranceplan/request",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "insuranceplan/on_request",
+  "hcxStatus": "response.error",
+  "errorCode": "PAYR-1402",
+  "errorMessage": "Requested policy 100217 found not be associated with any payer for insurance pla"
+ },
+ "ack": null,
+ "caseNumber": "A/9007/26",
+ "correlationId": "e0448d2a-5f5c-40fc-85c3-c63773233191",
+ "date": "2026-11-12",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 0,
+  "namesReplaced": 0,
+  "numbersReplaced": 0,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "ProtocolResponse error on insuranceplan/on_request, case A/9007/26."
+}

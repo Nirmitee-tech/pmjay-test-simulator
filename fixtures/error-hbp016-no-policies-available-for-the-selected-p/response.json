@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518@hcx",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "8194c22a-d499-4919-a89f-14a5e3ac33bc",
+ "x-hcx-correlation_id": "3bf4f191-9bd0-4910-a8c3-1c7b18ed0f46",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794552698000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "HBP016",
+  "message": "No policies available for the selected policy code",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": "coverageeligibility",
+ "x-hcx-ben-abha-id": null
+}

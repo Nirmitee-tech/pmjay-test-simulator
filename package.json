@@ -1,0 +1,17 @@
+{
+  "name": "pmjay-test-simulator",
+  "version": "0.2.0",
+  "private": true,
+  "description": "PMJAY Test Simulator by Nirmitee Tech: a local stand-in for NHA's NHCX exchange, the PMJAY payer 1518@hcx and NHA's dummy payer, for testing any HIMS.",
+  "main": "src/server/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "node --test test/*.test.js",
+    "test:server": "node --test test/server.jwe.test.js test/server.integration.test.js"
+  },
+  "dependencies": {},
+  "author": "Nirmitee Tech"
+}

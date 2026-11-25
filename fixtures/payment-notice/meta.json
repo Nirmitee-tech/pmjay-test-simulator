@@ -1,0 +1,32 @@
+{
+ "scenario": "payment-notice",
+ "outcome": "payment notice from 1518 and the HIMS acknowledgement",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "paymentnotice/request",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "paymentnotice/on_request",
+  "hcxStatus": "response.complete",
+  "errorCode": "NULL",
+  "errorMessage": "NULL"
+ },
+ "ack": null,
+ "caseNumber": "A/9022/26",
+ "correlationId": "a2779d55-6293-4e98-a364-29ab10cedd7b",
+ "date": "2026-11-20",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 0,
+  "namesReplaced": 0,
+  "numbersReplaced": 0,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "Direction reversed: request.json is 1518 paymentnotice/request (Task deliver + PaymentNotice + PaymentReconciliation); response.json is the HIMS paymentnotice/on_request."
+}

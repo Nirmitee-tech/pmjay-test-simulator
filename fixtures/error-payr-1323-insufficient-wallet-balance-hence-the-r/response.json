@@ -1,0 +1,21 @@
+{
+ "type": "ProtocolResponse",
+ "x-hcx-sender_code": "1518",
+ "x-hcx-recipient_code": "1000000001",
+ "x-hcx-api_call_id": "bde6d2ad-4aaa-4bbc-a383-a93c0d150faf",
+ "x-hcx-correlation_id": "bb040c36-3c29-4548-803f-cbaa6464d996",
+ "x-hcx-workflow_id": null,
+ "x-hcx-timestamp": "1794971773000",
+ "x-hcx-debug_flag": null,
+ "x-hcx-status": "response.error",
+ "x-hcx-redirect_to": null,
+ "x-hcx-error_details": {
+  "code": "PAYR-1323",
+  "message": "Insufficient wallet balance. Hence the request will not be processed.",
+  "trace": null
+ },
+ "x-hcx-debug_details": null,
+ "x-hcx-domain-header": null,
+ "x-hcx-entity-type": null,
+ "x-hcx-ben-abha-id": null
+}

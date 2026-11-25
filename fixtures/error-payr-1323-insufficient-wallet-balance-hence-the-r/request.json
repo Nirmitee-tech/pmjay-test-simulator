@@ -1,0 +1,1379 @@
+{
+ "resourceType": "Bundle",
+ "id": "e0283a04-1123-4970-8e44-b2c6375bdc36",
+ "meta": {
+  "profile": [
+   "https://nrces.in/ndhm/fhir/r4/StructureDefinition/ClaimBundle"
+  ]
+ },
+ "identifier": {
+  "system": "urn:hims:bundle",
+  "value": "17834e3f-6e65-4b00-aa53-88195f3867cd"
+ },
+ "type": "collection",
+ "timestamp": "2026-11-18T08:45:41+05:30",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:9a839d48-7b58-4f81-9cb7-6ac403f08d79",
+   "resource": {
+    "resourceType": "Claim",
+    "id": "9a839d48-7b58-4f81-9cb7-6ac403f08d79",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Claim"
+     ]
+    },
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "CLN",
+         "display": "Claim number"
+        }
+       ]
+      },
+      "system": "https://nhcx.abdm.gov.in",
+      "value": "A/9015/26"
+     }
+    ],
+    "status": "active",
+    "type": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "737481003",
+       "display": "Inpatient care management (procedure)"
+      }
+     ]
+    },
+    "use": "claim",
+    "patient": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7",
+     "display": "Patient"
+    },
+    "created": "2026-11-18T08:45:41+05:30",
+    "insurer": {
+     "reference": "urn:uuid:ca1d864f-7b46-407b-a79c-5ebaa29c73ce",
+     "display": "Organization"
+    },
+    "provider": {
+     "reference": "urn:uuid:ff896cad-4475-4fba-bb83-432ad92480ed",
+     "display": "Organization"
+    },
+    "priority": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+       "code": "normal",
+       "display": "Normal"
+      }
+     ]
+    },
+    "billablePeriod": {
+     "start": "2026-11-17T07:08:43+05:30",
+     "end": "2026-11-18T08:25:43"
+    },
+    "enterer": {
+     "display": "1"
+    },
+    "facility": {
+     "display": "TEST HOSPITAL, Deluxe - SF"
+    },
+    "careTeam": [
+     {
+      "sequence": 1,
+      "provider": {
+       "reference": "urn:uuid:ba2c5b37-299e-4835-a187-d24679228843",
+       "display": "Practitioner"
+      },
+      "role": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+         "code": "primary",
+         "display": "Primary provider"
+        }
+       ]
+      }
+     }
+    ],
+    "diagnosis": [
+     {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10",
+         "code": "I20.0",
+         "display": "Unstable angina"
+        }
+       ]
+      },
+      "type": [
+       {
+        "coding": [
+         {
+          "system": "http://snomed.info/sct",
+          "code": "89100005",
+          "display": "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "procedure": [
+     {
+      "sequence": 1,
+      "procedureReference": {
+       "reference": "urn:uuid:3f6c7dc3-8249-486d-9697-6771b9022222",
+       "display": "Orchidectomy"
+      },
+      "id": "Procedure/1"
+     }
+    ],
+    "insurance": [
+     {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+       "reference": "urn:uuid:a11e2104-92b0-403b-bc07-9e4b144134e8",
+       "display": "Coverage"
+      },
+      "preAuthRef": [
+       "PMJAY/HP/S/2024/R2/2026111790000008"
+      ]
+     }
+    ],
+    "supportingInfo": [
+     {
+      "sequence": 1,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ONS",
+         "display": "Period, start or end dates of aspects of the Condition. (e.g. admission, discharge etc)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ADDD",
+         "display": "Admission date -Discharge date"
+        }
+       ]
+      },
+      "valueString": "2026-11-17T07:08:43+05:30",
+      "id": "SupportingInformation/1"
+     },
+     {
+      "sequence": 2,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:09f74718-eabb-4452-b223-651ececb4f01"
+      },
+      "id": "SupportingInformation/2"
+     },
+     {
+      "sequence": 3,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:81897d9f-379f-4631-9ed5-9c4c0a5f5ee1"
+      },
+      "id": "SupportingInformation/3"
+     },
+     {
+      "sequence": 4,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "OTH",
+         "display": "Other"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "EDT",
+         "display": "EncounterDateTime"
+        }
+       ]
+      },
+      "valueString": "2026-08-18T20:18:43+05:30",
+      "id": "SupportingInformation/4"
+     },
+     {
+      "sequence": 5,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ONS",
+         "display": "Period, start or end dates of aspects of the Condition. (e.g. admission, discharge etc)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "DSDE",
+         "display": "Discharge start-discharge end time"
+        }
+       ]
+      },
+      "valueString": "2026-11-18T08:25:43+05:30",
+      "id": "SupportingInformation/5"
+     },
+     {
+      "sequence": 6,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "DIS",
+         "display": "Discharge status and discharge to location detail"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "DAMA",
+         "display": "Discharge Summary with DAMA"
+        }
+       ]
+      },
+      "valueString": "Before Surgery",
+      "id": "SupportingInformation/6"
+     },
+     {
+      "sequence": 7,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "NMI",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "CQD",
+         "display": "Claim query detail"
+        }
+       ]
+      },
+      "valueString": "Orchidectomy done; discharged stable.",
+      "id": "SupportingInformation/7"
+     },
+     {
+      "sequence": 8,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ATT",
+         "display": "Attachment"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "FB",
+         "display": "Final Bill"
+        }
+       ]
+      },
+      "id": "SupportingInformation/8",
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+       "title": "Final bill I/906/26, grand total 12000"
+      }
+     },
+     {
+      "sequence": 9,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "ATT",
+         "display": "Attachment"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "DCR",
+         "display": "Discharge Summary Report"
+        }
+       ]
+      },
+      "id": "SupportingInformation/9",
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+       "title": "Discharge Summary 18-Nov-2026"
+      }
+     },
+     {
+      "sequence": 10,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:1e8f1ce7-f3df-47ac-891b-d5b780d6ac48"
+      },
+      "id": "SupportingInformation/10"
+     },
+     {
+      "sequence": 11,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:3859591e-709d-4416-8840-9ae9cf5ec803"
+      },
+      "id": "SupportingInformation/11"
+     },
+     {
+      "sequence": 12,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-category",
+         "code": "INF",
+         "display": "Additional info related to claim ( conveying additional situation and condition information.)"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "ODN",
+         "display": "Other document"
+        }
+       ]
+      },
+      "valueReference": {
+       "reference": "urn:uuid:3ef4899e-eceb-4dd7-8fd9-b023d3dd2171"
+      },
+      "id": "SupportingInformation/12"
+     },
+     {
+      "sequence": 13,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0641",
+         "display": "FNAC"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "FNAC",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/13"
+     },
+     {
+      "sequence": 14,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0745",
+         "display": "justification of orchidectmy"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "justification of orchidectmy",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/14"
+     },
+     {
+      "sequence": 15,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0744",
+         "display": "tumour markers"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "tumour markers",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/15"
+     },
+     {
+      "sequence": 16,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0743",
+         "display": "USG of scrotum"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "USG of scrotum",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/16"
+     },
+     {
+      "sequence": 17,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0006",
+         "display": "Detailed discharge summary"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Detailed discharge summary",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/17"
+     },
+     {
+      "sequence": 18,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0160",
+         "display": "detailed operative notes"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "detailed operative notes",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/18"
+     },
+     {
+      "sequence": 19,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0185",
+         "display": "Histopath"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Histopath",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/19"
+     },
+     {
+      "sequence": 20,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0003",
+         "display": "Clinical notes"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Clinical notes",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/20"
+     },
+     {
+      "sequence": 21,
+      "category": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-supportinginfo-code",
+         "code": "INV",
+         "display": "Document Type - Investigation"
+        }
+       ]
+      },
+      "code": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "MAND0021",
+         "display": "Intra procedure clinical photograph"
+        }
+       ]
+      },
+      "valueAttachment": {
+       "contentType": "application/pdf",
+       "title": "Intra procedure clinical photograph",
+       "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo="
+      },
+      "id": "SupportingInformation/21"
+     }
+    ],
+    "item": [
+     {
+      "sequence": 2,
+      "careTeamSequence": [
+       1
+      ],
+      "diagnosisSequence": [
+       1
+      ],
+      "procedureSequence": [
+       1
+      ],
+      "informationSequence": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "category": {
+       "coding": [
+        {
+         "system": "https://payer.pmjay.nha.gov.in",
+         "code": "BM",
+         "display": "Burns Management"
+        }
+       ]
+      },
+      "productOrService": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+         "code": "LM100",
+         "display": "LAMA DAMA Procedure"
+        }
+       ]
+      },
+      "servicedPeriod": {
+       "start": "2026-11-17",
+       "end": "2026-11-18T08:25:43"
+      },
+      "id": "Item/2",
+      "programCode": [
+       {
+        "coding": [
+         {
+          "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-program-code",
+          "code": "AB-PMJAY",
+          "display": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)"
+         }
+        ]
+       }
+      ],
+      "quantity": {
+       "value": 1
+      },
+      "unitPrice": {
+       "value": 12000.0,
+       "currency": "INR"
+      },
+      "net": {
+       "value": 12000.0,
+       "currency": "INR"
+      }
+     }
+    ],
+    "total": {
+     "value": 12000.0,
+     "currency": "INR"
+    },
+    "related": [
+     {
+      "claim": {
+       "identifier": {
+        "value": "PMJAY/HP/S/2024/R2/2026111790000008"
+       }
+      },
+      "relationship": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+         "code": "prior",
+         "display": "Prior Claim"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "9fb6a29f-54fe-4e91-8655-f452800c59c7",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "name": [
+     {
+      "text": "TEST PATIENT"
+     }
+    ],
+    "gender": "male",
+    "birthDate": "1990-01-01",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "ABHA",
+         "display": "ABHA Number"
+        }
+       ]
+      },
+      "system": "https://healthid.ndhm.gov.in",
+      "value": "91-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "PMJAY",
+         "display": "PMJAY Member ID"
+        }
+       ]
+      },
+      "system": "https://bis.pmjay.gov.in",
+      "value": "SBXSTG269"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MR",
+         "display": "Medical record number"
+        }
+       ]
+      },
+      "system": "https://ndhm.in/mrn",
+      "value": "U/904/26"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ff896cad-4475-4fba-bb83-432ad92480ed",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "ff896cad-4475-4fba-bb83-432ad92480ed",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "TEST HOSPITAL",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NPI",
+         "display": "National Provider Identifier"
+        }
+       ]
+      },
+      "system": "https://facility.ndhm.gov.in",
+      "value": "IN0000000000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ca1d864f-7b46-407b-a79c-5ebaa29c73ce",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "ca1d864f-7b46-407b-a79c-5ebaa29c73ce",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+     ]
+    },
+    "name": "PMJAY",
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "code": "pay",
+        "display": "Payer"
+       }
+      ]
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NIIP",
+         "display": "National Insurance Payor Identifier (Payor)"
+        }
+       ]
+      },
+      "system": "https://hcx.abdm.gov.in/participant",
+      "value": "1518@hcx"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ba2c5b37-299e-4835-a187-d24679228843",
+   "resource": {
+    "resourceType": "Practitioner",
+    "id": "ba2c5b37-299e-4835-a187-d24679228843",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner"
+     ]
+    },
+    "name": [
+     {
+      "text": "DR TEST DOCTOR"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-identifier-type-code",
+         "code": "HPIN",
+         "display": "Health Practitioner ID issued by NDHM"
+        }
+       ]
+      },
+      "system": "https://hpr.abdm.gov.in",
+      "value": "00-0000-0000-0000"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "MD",
+         "display": "Medical License number"
+        }
+       ]
+      },
+      "system": "https://doctor.ndhm.gov.in",
+      "value": "00-0000-0000-0000"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:a11e2104-92b0-403b-bc07-9e4b144134e8",
+   "resource": {
+    "resourceType": "Coverage",
+    "id": "a11e2104-92b0-403b-bc07-9e4b144134e8",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Coverage"
+     ]
+    },
+    "status": "active",
+    "subscriber": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7",
+     "display": "Patient"
+    },
+    "subscriberId": "SBXSTG269",
+    "beneficiary": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7",
+     "display": "Patient"
+    },
+    "relationship": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+       "code": "self",
+       "display": "Self"
+      }
+     ]
+    },
+    "payor": [
+     {
+      "reference": "urn:uuid:ca1d864f-7b46-407b-a79c-5ebaa29c73ce",
+      "display": "Organization"
+     }
+    ],
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://payer.nha.gov.in",
+      "value": "PMJAY/HP/S/G"
+     },
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "NH",
+         "display": "National Health Plan Identifier"
+        }
+       ]
+      },
+      "system": "https://irdai.gov.in/policy",
+      "value": "PMJAY/HP/S/G"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:3f6c7dc3-8249-486d-9697-6771b9022222",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "3f6c7dc3-8249-486d-9697-6771b9022222",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Procedure"
+     ]
+    },
+    "status": "preparation",
+    "identifier": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+         "code": "SNO",
+         "display": "Serial Number"
+        }
+       ]
+      },
+      "system": "urn:hims:procedure",
+      "value": "1"
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-procedure-code",
+       "code": "SG059A",
+       "display": "Orchidectomy"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7",
+     "display": "Patient"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:09f74718-eabb-4452-b223-651ececb4f01",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "09f74718-eabb-4452-b223-651ececb4f01",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100020",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7"
+    },
+    "authored": "2026-11-17T14:12:31+05:30",
+    "item": [
+     {
+      "linkId": "100075",
+      "text": "Admission Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-16T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100074",
+      "text": "Surgery/Treatment Start Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-16T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100073",
+      "text": "Admission Type",
+      "answer": [
+       {
+        "valueString": "PLANNED"
+       }
+      ]
+     },
+     {
+      "linkId": "100076",
+      "text": "Medico Legal Case",
+      "answer": [
+       {
+        "valueString": "No"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:81897d9f-379f-4631-9ed5-9c4c0a5f5ee1",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "81897d9f-379f-4631-9ed5-9c4c0a5f5ee1",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100024",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7"
+    },
+    "authored": "2026-11-17T14:12:31+05:30",
+    "item": [
+     {
+      "linkId": "100093",
+      "text": "Medical Superintendent Declaration Form (During Admission)",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "declaration-form.pdf",
+         "creation": "2026-11-17T14:12:31+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "100095",
+      "text": "Remarks",
+      "answer": [
+       {
+        "valueString": "Patient present at admission; declaration signed by the Medical Superintendent."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:1e8f1ce7-f3df-47ac-891b-d5b780d6ac48",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "1e8f1ce7-f3df-47ac-891b-d5b780d6ac48",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100137",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7"
+    },
+    "authored": "2026-11-18T08:45:46+05:30",
+    "item": [
+     {
+      "linkId": "103020",
+      "text": "DAMA Stage",
+      "answer": [
+       {
+        "valueString": "Before Surgery/Treatment"
+       }
+      ]
+     },
+     {
+      "linkId": "101403",
+      "text": "In Treatment Photo with Doctor/PMAM",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "post-treatment-photo-with-doctor.pdf",
+         "creation": "2026-11-18T08:45:46+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "100012",
+      "text": "Discharge Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-17T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100101",
+      "text": "Surgery/Treatment Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-17T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "103046",
+      "text": "Upload Mangalkamana Patra",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "clinical-notes.pdf",
+         "creation": "2026-11-18T08:45:46+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "103045",
+      "text": "Feedback Form",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "feedback-form.pdf",
+         "creation": "2026-11-18T08:45:46+05:30"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:3859591e-709d-4416-8840-9ae9cf5ec803",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "3859591e-709d-4416-8840-9ae9cf5ec803",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100466",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7"
+    },
+    "authored": "2026-11-18T08:45:49+05:30",
+    "item": [
+     {
+      "linkId": "135477",
+      "text": "Medical Superintendent Declaration Form (During Discharge)",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "ms-declaration-discharge.pdf",
+         "creation": "2026-11-18T08:45:49+05:30"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:3ef4899e-eceb-4dd7-8fd9-b023d3dd2171",
+   "resource": {
+    "resourceType": "QuestionnaireResponse",
+    "id": "3ef4899e-eceb-4dd7-8fd9-b023d3dd2171",
+    "questionnaire": "https://payer.gov.in/policy/questionnaire/100022",
+    "status": "completed",
+    "subject": {
+     "reference": "urn:uuid:9fb6a29f-54fe-4e91-8655-f452800c59c7"
+    },
+    "authored": "2026-11-18T08:46:00+05:30",
+    "item": [
+     {
+      "linkId": "100088",
+      "text": "Hospital Bill",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "Final bill I/906/26, grand total 12000",
+         "creation": "2026-11-18T08:46:00+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "15201",
+      "text": "Justification Letter",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "clinical-notes.pdf",
+         "creation": "2026-11-18T08:46:00+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "103013",
+      "text": "Bill Date",
+      "answer": [
+       {
+        "valueDateTime": "2026-11-17T20:18:43+05:30"
+       }
+      ]
+     },
+     {
+      "linkId": "100089",
+      "text": "Any other document",
+      "answer": [
+       {
+        "valueAttachment": {
+         "contentType": "application/pdf",
+         "language": "en-IN",
+         "data": "JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAyIDAgUj4+ZW5kb2JqCjIgMCBvYmo8PC9UeXBlL1BhZ2VzL0tpZHNbMyAwIFJdL0NvdW50IDE+PmVuZG9iagozIDAgb2JqPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9NZWRpYUJveFswIDAgNzIgNzJdPj5lbmRvYmoKdHJhaWxlcjw8L1Jvb3QgMSAwIFI+PgolJUVPRgo=",
+         "title": "clinical-notes.pdf",
+         "creation": "2026-11-18T08:46:00+05:30"
+        }
+       }
+      ]
+     },
+     {
+      "linkId": "103012",
+      "text": "Hospital Bill Number",
+      "answer": [
+       {
+        "valueString": "I/906/26"
+       }
+      ]
+     },
+     {
+      "linkId": "135486",
+      "text": "Hospital Bill Amount",
+      "answer": [
+       {
+        "valueString": "12000"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

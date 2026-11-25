@@ -1,0 +1,32 @@
+{
+ "scenario": "error-err-pyr-sr-002-no-claim-history-with-requested-details",
+ "outcome": "error ERR-PYR-SR-002",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "search/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "search/on_submit",
+  "hcxStatus": "response.error",
+  "errorCode": "ERR-PYR-SR-002",
+  "errorMessage": "No Claim History with requested Details"
+ },
+ "ack": null,
+ "caseNumber": "A/9007/26",
+ "correlationId": "3eba851b-c861-4d90-98ff-ad221bc6a705",
+ "date": "2026-11-12",
+ "files": [
+  "request.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 0,
+  "namesReplaced": 0,
+  "numbersReplaced": 0,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "ProtocolResponse error on search/on_submit, case A/9007/26."
+}

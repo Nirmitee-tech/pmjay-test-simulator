@@ -1,0 +1,36 @@
+{
+ "scenario": "implant-claim",
+ "outcome": "claim approved with implant",
+ "direction": "HIMS to 1518",
+ "request": {
+  "endpoint": "claim/submit",
+  "status": "request.initiated"
+ },
+ "response": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.complete",
+  "errorCode": "100",
+  "errorMessage": "Message Submitted"
+ },
+ "ack": {
+  "endpoint": "claim/on_submit",
+  "hcxStatus": "response.partial"
+ },
+ "caseNumber": "A/9013/26",
+ "correlationId": "3d245c5c-26f8-4dde-8b0f-89255d0ab603",
+ "date": "2026-11-17",
+ "files": [
+  "request.json",
+  "response-ack.json",
+  "response.json"
+ ],
+ "missing": [],
+ "source": "derived from sandbox traffic between a HIMS and 1518@hcx; identifiers and times changed",
+ "scrubbed": {
+  "attachmentsReplacedWithTinyPdf": 18,
+  "namesReplaced": 3,
+  "numbersReplaced": 1,
+  "rule": "patient/practitioner names, phones, addresses, ABHA/JHN/PI/HPR ids replaced with fixed fakes; SBXSTG269 kept; hospital ids, case numbers, bill numbers and preAuthRef replaced with fakes in the same format"
+ },
+ "note": "A/9013/26, 17 Nov."
+}
